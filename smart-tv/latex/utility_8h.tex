@@ -1,0 +1,334 @@
+\hypertarget{utility_8h}{}\doxysection{Riferimenti per il file src/utility.h}
+\label{utility_8h}\index{src/utility.h@{src/utility.h}}
+
+
+File contenente i metodi di utilità  
+
+
+{\ttfamily \#include \char`\"{}definizioni.\+h\char`\"{}}\newline
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{utility_8h_a0521178dee53629d3d7f99cad679bb82}{leggi\+\_\+record}} (FILE $\ast$file, int $\ast$id, size\+\_\+t dimensione\+\_\+struct, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Metodo di lettura di un record da un file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utility_8h_ad69523fbfe67ff288966ec8f756a7ff8}{scrivi\+\_\+record}} (FILE $\ast$file, int $\ast$id, size\+\_\+t dimensione\+\_\+struct, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Metodo di inserimento di un record ad un file. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{utility_8h_ae820627c604996264bf69cd4bf92fdab}{converti\+\_\+in\+\_\+minuscolo}} (char $\ast$parola, int lunghezza)
+\begin{DoxyCompactList}\small\item\em Funzione di conversione stringa in minuscolo. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{utility_8h_a27056c7f408232eb5b72df33c824f32c}{nome\+\_\+tipologia}} (\mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3}{tipologia\+\_\+e}} tipologia)
+\begin{DoxyCompactList}\small\item\em Funzione di conversione di una tipologia televisiva in stringa. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{utility_8h_acde9c024b4f9afd6d6c231e577590982}{nome\+\_\+genere}} (\mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36}{genere\+\_\+e}} genere)
+\begin{DoxyCompactList}\small\item\em Funzione di conversione di un genere televisivo in stringa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utility_8h_a8ec0aef15eb5d836de75782896bb12ec}{aggiungi\+\_\+valutazione}} (short int $\ast$punteggio, int valutazione)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di calcolo punteggio in base alla valutazione del programma. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utility_8h_acb20d2df8cd47a1bd67537fbcebf71f2}{calcola\+\_\+punteggio}} (const \mbox{\hyperlink{structutente__t}{utente\+\_\+t}} $\ast$utente, const \mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} $\ast$programma)
+\begin{DoxyCompactList}\small\item\em Procedura per il calcolo del punteggio utile per i suggerimenti. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utility_8h_a98bc256cb405dd99aed34541022f17a3}{genera\+\_\+numero\+\_\+casuale}} (int \mbox{\hyperlink{utility_8h_abd8bbcfabb3ddef2ccaafb9928a37b95}{min}}, int max)
+\begin{DoxyCompactList}\small\item\em Procedura di generazione di un numero casuale. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utility_8h_abd8bbcfabb3ddef2ccaafb9928a37b95}{min}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Procedura di calcolo del minimo tra due numeri. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}} \mbox{\hyperlink{utility_8h_a49f252b910eab0bf889dd06b4f218a9e}{rimuovi\+\_\+programma\+\_\+suggerito}} (\mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}} lista, int indice\+\_\+da\+\_\+rimuovere)
+\begin{DoxyCompactList}\small\item\em Procedura di rimozione di un programma suggerito da una lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utility_8h_a469aeef5d04174d91653769cd2f7e3b1}{alloca\+\_\+memoria\+\_\+programmi}} (\mbox{\hyperlink{structlista__programmi__t}{lista\+\_\+programmi\+\_\+t}} $\ast$lista)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di allocazione memoria ad una \mbox{\hyperlink{structlista__programmi__t}{lista\+\_\+programmi\+\_\+t}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utility_8h_aa8687190ce0b1bfb30a8339e40e2e927}{alloca\+\_\+memoria\+\_\+programmi\+\_\+suggeriti}} (\mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}} $\ast$lista)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di allocazione memoria ad una \mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utility_8h_aa9e75cf095177732899821c8a0bc7695}{inserisci\+\_\+suggerimento}} (\mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}} $\ast$lista, int codice, char $\ast$titolo, short int punteggio)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di inserimento di un suggerimento in una lista di programmi suggeriti. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+File contenente i metodi di utilità 
+
+In questo file sono contenuti metodi di utilità necessari per un corretto funzionamento del software.
+
+Metodi di lettura e scrittura su file Metodi di conversione Metodi di decodifica di enum
+
+\begin{DoxyAuthor}{Autore}
+Alessandro Marra 
+
+Vito Natale 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{utility_8h_a8ec0aef15eb5d836de75782896bb12ec}\label{utility_8h_a8ec0aef15eb5d836de75782896bb12ec}} 
+\index{utility.h@{utility.h}!aggiungi\_valutazione@{aggiungi\_valutazione}}
+\index{aggiungi\_valutazione@{aggiungi\_valutazione}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{aggiungi\_valutazione()}{aggiungi\_valutazione()}}
+{\footnotesize\ttfamily void aggiungi\+\_\+valutazione (\begin{DoxyParamCaption}\item[{short int $\ast$}]{punteggio,  }\item[{int}]{valutazione }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di calcolo punteggio in base alla valutazione del programma. 
+
+Questa funzione implementa l\textquotesingle{}assegnazione di un punteggio ad un programma in base alla sua valutazione Questa logica viene richiamata dalla procedura di calcolo dei programmi suggeriti (\mbox{\hyperlink{utility_8h_acb20d2df8cd47a1bd67537fbcebf71f2}{calcola\+\_\+punteggio}}) 5 stelle -\/\texorpdfstring{$>$}{>} +2 punti 4 stelle -\/\texorpdfstring{$>$}{>} +1 punto 3 stelle -\/\texorpdfstring{$>$}{>} +0 punti 2 stelle -\/\texorpdfstring{$>$}{>} -\/1 punti 1 stella -\/\texorpdfstring{$>$}{>} -\/2 punti
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$punteggio} & Riferimento al punteggio da modificare \\
+\hline
+{\em valutazione} & Valutazione del programma televisivo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{utility_8h_a469aeef5d04174d91653769cd2f7e3b1}\label{utility_8h_a469aeef5d04174d91653769cd2f7e3b1}} 
+\index{utility.h@{utility.h}!alloca\_memoria\_programmi@{alloca\_memoria\_programmi}}
+\index{alloca\_memoria\_programmi@{alloca\_memoria\_programmi}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{alloca\_memoria\_programmi()}{alloca\_memoria\_programmi()}}
+{\footnotesize\ttfamily void alloca\+\_\+memoria\+\_\+programmi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista__programmi__t}{lista\+\_\+programmi\+\_\+t}} $\ast$}]{lista }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di allocazione memoria ad una \mbox{\hyperlink{structlista__programmi__t}{lista\+\_\+programmi\+\_\+t}}. 
+
+La funzione prende in input una lista di programmi e ne incrementa l\textquotesingle{}allocazione (realloc) per contenere un nuovo \mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} Se la lista non contiene elementi, la funzione si occupa di allocare la memoria (calloc) la prima volta
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$lista} & Lista di programmi \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{utility_8h_aa8687190ce0b1bfb30a8339e40e2e927}\label{utility_8h_aa8687190ce0b1bfb30a8339e40e2e927}} 
+\index{utility.h@{utility.h}!alloca\_memoria\_programmi\_suggeriti@{alloca\_memoria\_programmi\_suggeriti}}
+\index{alloca\_memoria\_programmi\_suggeriti@{alloca\_memoria\_programmi\_suggeriti}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{alloca\_memoria\_programmi\_suggeriti()}{alloca\_memoria\_programmi\_suggeriti()}}
+{\footnotesize\ttfamily void alloca\+\_\+memoria\+\_\+programmi\+\_\+suggeriti (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}} $\ast$}]{lista }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di allocazione memoria ad una \mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}}. 
+
+La funzione prende in input una lista di programmi suggeriti e ne incrementa l\textquotesingle{}allocazione (realloc) per contenere un nuovo suggerito\+\_\+t Se la lista non contiene elementi, la funzione si occupa di allocare la memoria (calloc) la prima volta
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$lista} & Lista di programmi suggeriti \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{utility_8h_acb20d2df8cd47a1bd67537fbcebf71f2}\label{utility_8h_acb20d2df8cd47a1bd67537fbcebf71f2}} 
+\index{utility.h@{utility.h}!calcola\_punteggio@{calcola\_punteggio}}
+\index{calcola\_punteggio@{calcola\_punteggio}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{calcola\_punteggio()}{calcola\_punteggio()}}
+{\footnotesize\ttfamily int calcola\+\_\+punteggio (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structutente__t}{utente\+\_\+t}} $\ast$}]{utente,  }\item[{const \mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} $\ast$}]{programma }\end{DoxyParamCaption})}
+
+
+
+Procedura per il calcolo del punteggio utile per i suggerimenti. 
+
+Questa funzione serve a determinare la priorità con la quale suggerire un programma Tiene conto delle preferenze utente, che vengono incrociate con le caratteristiche del programma (tipologia e genere) Si tiene conto inoltre della valutazione del programma, la cui logica è demandata a \mbox{\hyperlink{utility_8h_a8ec0aef15eb5d836de75782896bb12ec}{aggiungi\+\_\+valutazione}}
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$utente} & Utente \\
+\hline
+{\em $\ast$programma} & Programma televisivo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Punteggio del programma 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utility_8h_ae820627c604996264bf69cd4bf92fdab}\label{utility_8h_ae820627c604996264bf69cd4bf92fdab}} 
+\index{utility.h@{utility.h}!converti\_in\_minuscolo@{converti\_in\_minuscolo}}
+\index{converti\_in\_minuscolo@{converti\_in\_minuscolo}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{converti\_in\_minuscolo()}{converti\_in\_minuscolo()}}
+{\footnotesize\ttfamily char $\ast$ converti\+\_\+in\+\_\+minuscolo (\begin{DoxyParamCaption}\item[{char $\ast$}]{parola,  }\item[{int}]{lunghezza }\end{DoxyParamCaption})}
+
+
+
+Funzione di conversione stringa in minuscolo. 
+
+Data in input una stringa e la sua lunghezza, restituisce una nuova stringa convertita in minuscolo
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$parola} & Stringa da convertire \\
+\hline
+{\em lunghezza} & Lunghezza della stringa da convertire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Stringa convertita in minuscolo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utility_8h_a98bc256cb405dd99aed34541022f17a3}\label{utility_8h_a98bc256cb405dd99aed34541022f17a3}} 
+\index{utility.h@{utility.h}!genera\_numero\_casuale@{genera\_numero\_casuale}}
+\index{genera\_numero\_casuale@{genera\_numero\_casuale}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{genera\_numero\_casuale()}{genera\_numero\_casuale()}}
+{\footnotesize\ttfamily int genera\+\_\+numero\+\_\+casuale (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Procedura di generazione di un numero casuale. 
+
+La funzione genera un numero intero casuale compreso tra {\ttfamily min} e {\ttfamily max} 
+
+
+\begin{DoxyParams}{Parametri}
+{\em min} & Numero minimo \\
+\hline
+{\em max} & Numero massimo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Numero generato 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utility_8h_aa9e75cf095177732899821c8a0bc7695}\label{utility_8h_aa9e75cf095177732899821c8a0bc7695}} 
+\index{utility.h@{utility.h}!inserisci\_suggerimento@{inserisci\_suggerimento}}
+\index{inserisci\_suggerimento@{inserisci\_suggerimento}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{inserisci\_suggerimento()}{inserisci\_suggerimento()}}
+{\footnotesize\ttfamily void inserisci\+\_\+suggerimento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}} $\ast$}]{lista,  }\item[{int}]{codice,  }\item[{char $\ast$}]{titolo,  }\item[{short int}]{punteggio }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di inserimento di un suggerimento in una lista di programmi suggeriti. 
+
+La funzione prende in input una lista di programmi suggeriti e ne incrementa l\textquotesingle{}allocazione (realloc) per contenere un nuovo suggerito\+\_\+t Se la lista non contiene elementi, la funzione si occupa di allocare la memoria (calloc) la prima volta
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$lista} & Lista di programmi suggeriti \\
+\hline
+{\em codice} & Codice del programma da inserire \\
+\hline
+{\em $\ast$titolo} & Titolo del programma da inserire \\
+\hline
+{\em punteggio} & Punteggio del programma suggerito \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{utility_8h_a0521178dee53629d3d7f99cad679bb82}\label{utility_8h_a0521178dee53629d3d7f99cad679bb82}} 
+\index{utility.h@{utility.h}!leggi\_record@{leggi\_record}}
+\index{leggi\_record@{leggi\_record}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{leggi\_record()}{leggi\_record()}}
+{\footnotesize\ttfamily void leggi\+\_\+record (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{int $\ast$}]{id,  }\item[{size\+\_\+t}]{dimensione\+\_\+struct,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Metodo di lettura di un record da un file. 
+
+Questa funzione serve a generalizzare l\textquotesingle{}operazione di lettura di un record dall\textquotesingle{}interno di un file Oltre al riferimento del file ({\ttfamily $\ast$file}) e al riferimento dell\textquotesingle{}oggetto ({\ttfamily $\ast$data}), vengono richiesti in input alcuni dati necessari per il corretto posizionamento all\textquotesingle{}interno del file
+\begin{DoxyItemize}
+\item l\textquotesingle{}identificativo univoco intero dell\textquotesingle{}oggetto da scrivere ({\ttfamily $\ast$id})
+\item la dimensione della struttura dati ({\ttfamily dimensione\+\_\+struct})
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file} & Puntatore del file \\
+\hline
+{\em $\ast$id} & Identificativo univoco intero dell\textquotesingle{}oggetto \\
+\hline
+{\em dimensione\+\_\+struct} & Dimensione della struttura dati \\
+\hline
+{\em $\ast$data} & Puntatore all\textquotesingle{}oggetto da scrivere all\textquotesingle{}interno del file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{utility_8h_abd8bbcfabb3ddef2ccaafb9928a37b95}\label{utility_8h_abd8bbcfabb3ddef2ccaafb9928a37b95}} 
+\index{utility.h@{utility.h}!min@{min}}
+\index{min@{min}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{min()}{min()}}
+{\footnotesize\ttfamily int min (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Procedura di calcolo del minimo tra due numeri. 
+
+La funzione restituisce il numero minimo tra due numeri {\ttfamily a} e {\ttfamily b} 
+
+
+\begin{DoxyParams}{Parametri}
+{\em a} & Primo numero \\
+\hline
+{\em b} & Secondo numero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Numero minimo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utility_8h_acde9c024b4f9afd6d6c231e577590982}\label{utility_8h_acde9c024b4f9afd6d6c231e577590982}} 
+\index{utility.h@{utility.h}!nome\_genere@{nome\_genere}}
+\index{nome\_genere@{nome\_genere}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{nome\_genere()}{nome\_genere()}}
+{\footnotesize\ttfamily const char $\ast$ nome\+\_\+genere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36}{genere\+\_\+e}}}]{genere }\end{DoxyParamCaption})}
+
+
+
+Funzione di conversione di un genere televisivo in stringa. 
+
+Converte una genere televisivo di tipo \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36}{genere\+\_\+e}} in stringa
+
+
+\begin{DoxyParams}{Parametri}
+{\em genere} & Genere del programma da convertire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Genere in formato stringa 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utility_8h_a27056c7f408232eb5b72df33c824f32c}\label{utility_8h_a27056c7f408232eb5b72df33c824f32c}} 
+\index{utility.h@{utility.h}!nome\_tipologia@{nome\_tipologia}}
+\index{nome\_tipologia@{nome\_tipologia}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{nome\_tipologia()}{nome\_tipologia()}}
+{\footnotesize\ttfamily const char $\ast$ nome\+\_\+tipologia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3}{tipologia\+\_\+e}}}]{tipologia }\end{DoxyParamCaption})}
+
+
+
+Funzione di conversione di una tipologia televisiva in stringa. 
+
+Converte una tipologia televisiva di tipo \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3}{tipologia\+\_\+e}} in stringa
+
+
+\begin{DoxyParams}{Parametri}
+{\em tipologia} & Tipologia del programma da convertire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Tipologia in formato stringa 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utility_8h_a49f252b910eab0bf889dd06b4f218a9e}\label{utility_8h_a49f252b910eab0bf889dd06b4f218a9e}} 
+\index{utility.h@{utility.h}!rimuovi\_programma\_suggerito@{rimuovi\_programma\_suggerito}}
+\index{rimuovi\_programma\_suggerito@{rimuovi\_programma\_suggerito}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{rimuovi\_programma\_suggerito()}{rimuovi\_programma\_suggerito()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}} rimuovi\+\_\+programma\+\_\+suggerito (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}}}]{lista,  }\item[{int}]{indice\+\_\+da\+\_\+rimuovere }\end{DoxyParamCaption})}
+
+
+
+Procedura di rimozione di un programma suggerito da una lista. 
+
+La funzione prende in input una lista di programmi suggeriti e l\textquotesingle{}indice del programma da rimuovere Viene generata e restituita una nuova lista avente la lunghezza decrementata e l\textquotesingle{}elemento rimosso
+
+
+\begin{DoxyParams}{Parametri}
+{\em lista} & Lista di programmi suggeriti \\
+\hline
+{\em indice\+\_\+da\+\_\+rimuovere} & Indice del programma da rimuovere dalla lista \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Lista aggiornata 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utility_8h_ad69523fbfe67ff288966ec8f756a7ff8}\label{utility_8h_ad69523fbfe67ff288966ec8f756a7ff8}} 
+\index{utility.h@{utility.h}!scrivi\_record@{scrivi\_record}}
+\index{scrivi\_record@{scrivi\_record}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{scrivi\_record()}{scrivi\_record()}}
+{\footnotesize\ttfamily void scrivi\+\_\+record (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{int $\ast$}]{id,  }\item[{size\+\_\+t}]{dimensione\+\_\+struct,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Metodo di inserimento di un record ad un file. 
+
+Questa funzione serve a generalizzare l\textquotesingle{}operazione di aggiunta di un record all\textquotesingle{}interno di un file Oltre al riferimento del file ({\ttfamily $\ast$file}) e al riferimento dell\textquotesingle{}oggetto ({\ttfamily $\ast$data}), vengono richiesti in input alcuni dati necessari per il corretto posizionamento all\textquotesingle{}interno del file
+\begin{DoxyItemize}
+\item l\textquotesingle{}identificativo univoco intero dell\textquotesingle{}oggetto da scrivere ({\ttfamily $\ast$id})
+\item la dimensione della struttura dati ({\ttfamily dimensione\+\_\+struct})
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file} & Puntatore del file \\
+\hline
+{\em $\ast$id} & Identificativo univoco intero dell\textquotesingle{}oggetto \\
+\hline
+{\em dimensione\+\_\+struct} & Dimensione della struttura dati \\
+\hline
+{\em $\ast$data} & Puntatore all\textquotesingle{}oggetto da scrivere all\textquotesingle{}interno del file \\
+\hline
+\end{DoxyParams}

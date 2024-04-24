@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Smart TV:  File sorgente src/gestioneFile.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Smart TV<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Cerca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">gestioneFile.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="gestione_file_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef GESTIONEFILE_H_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define GESTIONEFILE_H_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="gestione_file_8h.html#a0521178dee53629d3d7f99cad679bb82">leggi_record</a>(FILE *file, <span class="keywordtype">int</span> *<span class="keywordtype">id</span>, <span class="keywordtype">size_t</span> dimensione_struct, <span class="keywordtype">void</span> *data);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">void</span> <a class="code hl_function" href="gestione_file_8h.html#ad69523fbfe67ff288966ec8f756a7ff8">scrivi_record</a>(FILE *file, <span class="keywordtype">int</span> *<span class="keywordtype">id</span>, <span class="keywordtype">size_t</span> dimensione_struct, <span class="keywordtype">void</span> *data);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// TODO: i 2 metodi dell&#39;utente vanno spostati da un&#39;altra parte? (come lo sono i metodi della gestione programmi)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// TODO: rinominare i file in maniera coerente (funzionalita_programmi VS gestioneFile)</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"></span><span class="keywordtype">void</span> <a class="code hl_function" href="gestione_file_8h.html#a4be3486a3f68ea23faac1d1a810ba9fe">visualizza_utente</a>(FILE *file_utenti);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">void</span> <a class="code hl_function" href="gestione_file_8h.html#a08568837b02cf763e1a20c937d608fd4">modifica_utente</a>(FILE *file_utenti);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif </span><span class="comment">/* GESTIONEFILE_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="agestione_file_8h_html_a0521178dee53629d3d7f99cad679bb82"><div class="ttname"><a href="gestione_file_8h.html#a0521178dee53629d3d7f99cad679bb82">leggi_record</a></div><div class="ttdeci">void leggi_record(FILE *file, int *id, size_t dimensione_struct, void *data)</div><div class="ttdoc">Metodo di lettura di un record da un file.</div><div class="ttdef"><b>Definition:</b> gestioneFile.c:17</div></div>
+<div class="ttc" id="agestione_file_8h_html_a08568837b02cf763e1a20c937d608fd4"><div class="ttname"><a href="gestione_file_8h.html#a08568837b02cf763e1a20c937d608fd4">modifica_utente</a></div><div class="ttdeci">void modifica_utente(FILE *file_utenti)</div><div class="ttdoc">Metodo di modifica del profilo utente.</div><div class="ttdef"><b>Definition:</b> gestioneFile.c:42</div></div>
+<div class="ttc" id="agestione_file_8h_html_a4be3486a3f68ea23faac1d1a810ba9fe"><div class="ttname"><a href="gestione_file_8h.html#a4be3486a3f68ea23faac1d1a810ba9fe">visualizza_utente</a></div><div class="ttdeci">void visualizza_utente(FILE *file_utenti)</div><div class="ttdoc">Metodo di visualizzaione del profilo utente.</div><div class="ttdef"><b>Definition:</b> gestioneFile.c:30</div></div>
+<div class="ttc" id="agestione_file_8h_html_ad69523fbfe67ff288966ec8f756a7ff8"><div class="ttname"><a href="gestione_file_8h.html#ad69523fbfe67ff288966ec8f756a7ff8">scrivi_record</a></div><div class="ttdeci">void scrivi_record(FILE *file, int *id, size_t dimensione_struct, void *data)</div><div class="ttdoc">Metodo di inserimento di un record ad un file.</div><div class="ttdef"><b>Definition:</b> gestioneFile.c:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

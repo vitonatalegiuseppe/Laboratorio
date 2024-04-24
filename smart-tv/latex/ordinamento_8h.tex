@@ -1,0 +1,78 @@
+\hypertarget{ordinamento_8h}{}\doxysection{Riferimenti per il file src/ordinamento.h}
+\label{ordinamento_8h}\index{src/ordinamento.h@{src/ordinamento.h}}
+
+
+File contenente gli algoritmi di ordinamento.  
+
+
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ordinamento_8h_a92436a09e616f16175fc54cc741c2f2d}{quick\+Sort}} (\mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} $\ast$array, int low, int high)
+\begin{DoxyCompactList}\small\item\em Funzione booleana dell\textquotesingle{}algoritmo di ordinamento quick\+Sort. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{ordinamento_8h_abab7673d1716b23e4e8a42613e824a64}{partition}} (\mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} $\ast$array, int low, int high)
+\begin{DoxyCompactList}\small\item\em Procedura standard facente parte dell\textquotesingle{}algoritmo di ordinamento \mbox{\hyperlink{ordinamento_8h_a92436a09e616f16175fc54cc741c2f2d}{quick\+Sort}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ordinamento_8h_af777e1c9250173e9fdb6de32d207d32d}{swap}} (\mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} $\ast$a, \mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} $\ast$b)
+\begin{DoxyCompactList}\small\item\em Funzione booleana standard facente parte dell\textquotesingle{}algoritmo di ordinamento \mbox{\hyperlink{ordinamento_8h_a92436a09e616f16175fc54cc741c2f2d}{quick\+Sort}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ordinamento_8h_a4139ee7bcbe20938f095b5e7f3100921}{shell\+Sort}} (\mbox{\hyperlink{structsuggerimento__t}{suggerimento\+\_\+t}} $\ast$vett, int dim)
+\begin{DoxyCompactList}\small\item\em Funzione booleana dell\textquotesingle{}algoritmo di ordinamento shell\+Sort. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+File contenente gli algoritmi di ordinamento. 
+
+In questo file sono contenuti gli algoritmi di ordinamento adeguati alle strutture dati del software
+
+\begin{DoxyAuthor}{Autore}
+Alessandro Marra 
+
+Vito Natale 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{ordinamento_8h_abab7673d1716b23e4e8a42613e824a64}\label{ordinamento_8h_abab7673d1716b23e4e8a42613e824a64}} 
+\index{ordinamento.h@{ordinamento.h}!partition@{partition}}
+\index{partition@{partition}!ordinamento.h@{ordinamento.h}}
+\doxysubsubsection{\texorpdfstring{partition()}{partition()}}
+{\footnotesize\ttfamily int partition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} $\ast$}]{array,  }\item[{int}]{low,  }\item[{int}]{high }\end{DoxyParamCaption})}
+
+
+
+Procedura standard facente parte dell\textquotesingle{}algoritmo di ordinamento \mbox{\hyperlink{ordinamento_8h_a92436a09e616f16175fc54cc741c2f2d}{quick\+Sort}}. 
+
+La procedura è stata adeguata per lavorare con la struttura dati \mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} strcmp ritorna un valore minore di zero se la prima stringa è minore della seconda
+\begin{DoxyItemize}
+\item su Windows viene ritornato -\/1
+\item su Mac OS viene ritornato un valore negativo pari alla differenza (numerica) tra i primi 2 caratteri differenti es. comparando \char`\"{}\+Spiderman 2\char`\"{} con \char`\"{}\+Una settimana da Dio\char`\"{} abbiamo la differenza tra i primi caratteri\+: \char`\"{}\+S\char`\"{} \texorpdfstring{$<$}{<} \char`\"{}\+U\char`\"{} di 2 posizioni su Windows il valore restituito è un generico -\/1 su Mac OS il valore restituito è -\/2
+\end{DoxyItemize}\mbox{\Hypertarget{ordinamento_8h_a92436a09e616f16175fc54cc741c2f2d}\label{ordinamento_8h_a92436a09e616f16175fc54cc741c2f2d}} 
+\index{ordinamento.h@{ordinamento.h}!quickSort@{quickSort}}
+\index{quickSort@{quickSort}!ordinamento.h@{ordinamento.h}}
+\doxysubsubsection{\texorpdfstring{quickSort()}{quickSort()}}
+{\footnotesize\ttfamily void quick\+Sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} $\ast$}]{array,  }\item[{int}]{low,  }\item[{int}]{high }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana dell\textquotesingle{}algoritmo di ordinamento quick\+Sort. 
+
+L\textquotesingle{}algoritmo è un algoritmo standard di ordinamento, adeguato per lavorare con la struttura dati \mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} \mbox{\Hypertarget{ordinamento_8h_a4139ee7bcbe20938f095b5e7f3100921}\label{ordinamento_8h_a4139ee7bcbe20938f095b5e7f3100921}} 
+\index{ordinamento.h@{ordinamento.h}!shellSort@{shellSort}}
+\index{shellSort@{shellSort}!ordinamento.h@{ordinamento.h}}
+\doxysubsubsection{\texorpdfstring{shellSort()}{shellSort()}}
+{\footnotesize\ttfamily void shell\+Sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsuggerimento__t}{suggerimento\+\_\+t}} $\ast$}]{vett,  }\item[{int}]{dim }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana dell\textquotesingle{}algoritmo di ordinamento shell\+Sort. 
+
+L\textquotesingle{}algoritmo è un algoritmo standard di ordinamento, adeguato per lavorare con la struttura dati \mbox{\hyperlink{structsuggerimento__t}{suggerimento\+\_\+t}} \mbox{\Hypertarget{ordinamento_8h_af777e1c9250173e9fdb6de32d207d32d}\label{ordinamento_8h_af777e1c9250173e9fdb6de32d207d32d}} 
+\index{ordinamento.h@{ordinamento.h}!swap@{swap}}
+\index{swap@{swap}!ordinamento.h@{ordinamento.h}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana standard facente parte dell\textquotesingle{}algoritmo di ordinamento \mbox{\hyperlink{ordinamento_8h_a92436a09e616f16175fc54cc741c2f2d}{quick\+Sort}}. 
+
+La funzione è stata adeguata per lavorare con la struttura dati \mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} 

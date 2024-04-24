@@ -1,0 +1,42 @@
+\hypertarget{utility_8h_source}{}\doxysection{utility.\+h}
+\label{utility_8h_source}\index{src/utility.h@{src/utility.h}}
+\mbox{\hyperlink{utility_8h}{Vai alla documentazione di questo file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#ifndef UTILITY\_H\_}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define UTILITY\_H\_}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{definizioni_8h}{definizioni.h}}"{}}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{34 \textcolor{keywordtype}{void} \mbox{\hyperlink{utility_8h_a0521178dee53629d3d7f99cad679bb82}{leggi\_record}}(FILE *file, \textcolor{keywordtype}{int} *\textcolor{keywordtype}{id}, \textcolor{keywordtype}{size\_t} dimensione\_struct, \textcolor{keywordtype}{void} *data);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{50 \textcolor{keywordtype}{void} \mbox{\hyperlink{utility_8h_ad69523fbfe67ff288966ec8f756a7ff8}{scrivi\_record}}(FILE *file, \textcolor{keywordtype}{int} *\textcolor{keywordtype}{id}, \textcolor{keywordtype}{size\_t} dimensione\_struct, \textcolor{keywordtype}{void} *data);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 }
+\DoxyCodeLine{62 \textcolor{keywordtype}{char}* \mbox{\hyperlink{utility_8h_ae820627c604996264bf69cd4bf92fdab}{converti\_in\_minuscolo}}(\textcolor{keywordtype}{char} *parola, \textcolor{keywordtype}{int} lunghezza);}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{72 \textcolor{keyword}{const} \textcolor{keywordtype}{char}* \mbox{\hyperlink{utility_8h_a27056c7f408232eb5b72df33c824f32c}{nome\_tipologia}}(\mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3}{tipologia\_e}} tipologia);}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{82 \textcolor{keyword}{const} \textcolor{keywordtype}{char}* \mbox{\hyperlink{utility_8h_acde9c024b4f9afd6d6c231e577590982}{nome\_genere}}(\mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36}{genere\_e}} genere);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{98 \textcolor{keywordtype}{void} \mbox{\hyperlink{utility_8h_a8ec0aef15eb5d836de75782896bb12ec}{aggiungi\_valutazione}}(\textcolor{keywordtype}{short} \textcolor{keywordtype}{int} *punteggio, \textcolor{keywordtype}{int} valutazione);}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{111 \textcolor{keywordtype}{int} \mbox{\hyperlink{utility_8h_acb20d2df8cd47a1bd67537fbcebf71f2}{calcola\_punteggio}}(\textcolor{keyword}{const} \mbox{\hyperlink{structutente__t}{utente\_t}} *utente, \textcolor{keyword}{const} \mbox{\hyperlink{structprogramma__t}{programma\_t}} *programma);}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{122 \textcolor{keywordtype}{int} \mbox{\hyperlink{utility_8h_a98bc256cb405dd99aed34541022f17a3}{genera\_numero\_casuale}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{utility_8h_abd8bbcfabb3ddef2ccaafb9928a37b95}{min}}, \textcolor{keywordtype}{int} max);}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{133 \textcolor{keywordtype}{int} \mbox{\hyperlink{utility_8h_abd8bbcfabb3ddef2ccaafb9928a37b95}{min}}(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{145 \mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\_programmi\_suggeriti\_t}} \mbox{\hyperlink{utility_8h_a49f252b910eab0bf889dd06b4f218a9e}{rimuovi\_programma\_suggerito}}(\mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\_programmi\_suggeriti\_t}} lista, \textcolor{keywordtype}{int} indice\_da\_rimuovere);}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{155 \textcolor{keywordtype}{void} \mbox{\hyperlink{utility_8h_a469aeef5d04174d91653769cd2f7e3b1}{alloca\_memoria\_programmi}}(\mbox{\hyperlink{structlista__programmi__t}{lista\_programmi\_t}} *lista);}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{165 \textcolor{keywordtype}{void} \mbox{\hyperlink{utility_8h_aa8687190ce0b1bfb30a8339e40e2e927}{alloca\_memoria\_programmi\_suggeriti}}(\mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\_programmi\_suggeriti\_t}} *lista);}
+\DoxyCodeLine{166 }
+\DoxyCodeLine{178 \textcolor{keywordtype}{void} \mbox{\hyperlink{utility_8h_aa9e75cf095177732899821c8a0bc7695}{inserisci\_suggerimento}}(\mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\_programmi\_suggeriti\_t}} *lista, \textcolor{keywordtype}{int} codice, \textcolor{keywordtype}{char} *titolo, \textcolor{keywordtype}{short} \textcolor{keywordtype}{int} punteggio);}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180 }
+\DoxyCodeLine{181 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* UTILITY\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

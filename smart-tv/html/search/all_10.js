@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['scrivi_5frecord_0',['scrivi_record',['../utility_8h.html#ad69523fbfe67ff288966ec8f756a7ff8',1,'utility.c']]],
+  ['serie_1',['SERIE',['../definizioni_8h.html#ab9154babc016d316238941a26deac4c3ae6a96f2b64338857387a0a809bff471b',1,'definizioni.h']]],
+  ['shellsort_2',['shellSort',['../ordinamento_8h.html#a4139ee7bcbe20938f095b5e7f3100921',1,'ordinamento.c']]],
+  ['smart_20tv_3',['Smart TV',['../index.html',1,'']]],
+  ['smart_2dtv_2ec_4',['smart-tv.c',['../smart-tv_8c.html',1,'']]],
+  ['sport_5',['SPORT',['../definizioni_8h.html#a6d687920ee346c977d96de94804bfb36a956b9eef94661d496f43e5e155353408',1,'definizioni.h']]],
+  ['stampa_5felenco_5fprogrammi_6',['stampa_elenco_programmi',['../comunicazione_8h.html#a80a5f92b9085edf2858311b84945f7b4',1,'comunicazione.c']]],
+  ['stampa_5felenco_5fprogrammi_5fda_5ffile_7',['stampa_elenco_programmi_da_file',['../funzionalita_8h.html#a0569c37d0361aac74014b82b86492949',1,'funzionalita.c']]],
+  ['stampa_5fgeneri_8',['stampa_generi',['../comunicazione_8h.html#a507fdf36911fecc86fa91262f62f9a58',1,'comunicazione.c']]],
+  ['stampa_5fmenu_5fmodifica_5fprogramma_9',['stampa_menu_modifica_programma',['../comunicazione_8h.html#a6953221fed288bd23e00d929c13c3580',1,'comunicazione.c']]],
+  ['stampa_5fmenu_5fmodifica_5futente_10',['stampa_menu_modifica_utente',['../comunicazione_8h.html#a66a17fe9695271a13af45c78845e5373',1,'comunicazione.c']]],
+  ['stampa_5fmenu_5fprincipale_11',['stampa_menu_principale',['../comunicazione_8h.html#af19db39fb5a1043df53d111553f1d1d3',1,'comunicazione.c']]],
+  ['stampa_5fmenu_5fprogrammi_12',['stampa_menu_programmi',['../comunicazione_8h.html#a253f2a88e0263f686c9fe3aea44b61b2',1,'comunicazione.c']]],
+  ['stampa_5fmenu_5futente_13',['stampa_menu_utente',['../comunicazione_8h.html#a9877001858f655a9acfd71e2a5ce8cab',1,'comunicazione.c']]],
+  ['stampa_5fprogramma_14',['stampa_programma',['../comunicazione_8h.html#ab89b1dcbe352f52dfb77f5cb0e5edd08',1,'comunicazione.c']]],
+  ['stampa_5fprogramma_5fsuggerito_15',['stampa_programma_suggerito',['../comunicazione_8h.html#ae143eaef835adb02825be356ad76a226',1,'comunicazione.c']]],
+  ['stampa_5ftipologie_16',['stampa_tipologie',['../comunicazione_8h.html#ad7eb7f2d6e6b2a65ce7a2ed31eed78c7',1,'comunicazione.c']]],
+  ['stampa_5futente_17',['stampa_utente',['../comunicazione_8h.html#a5273586695bd4f9cb926fd60d46a61e0',1,'comunicazione.c']]],
+  ['storico_18',['STORICO',['../definizioni_8h.html#a6d687920ee346c977d96de94804bfb36ab22a16658e739af3ff474f4294f34047',1,'definizioni.h']]],
+  ['suggerimento_5fprogrammi_19',['suggerimento_programmi',['../funzionalita_8h.html#a1e757d3c183141111610a2dc2791d8ff',1,'funzionalita.c']]],
+  ['suggerimento_5ft_20',['suggerimento_t',['../structsuggerimento__t.html',1,'']]],
+  ['suggerito_21',['suggerito',['../structprogramma__t.html#aa3bda7f4eef37bcd76488ef927320614',1,'programma_t']]],
+  ['swap_22',['swap',['../ordinamento_8h.html#af777e1c9250173e9fdb6de32d207d32d',1,'ordinamento.c']]]
+];

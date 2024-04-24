@@ -1,0 +1,116 @@
+\hypertarget{controlli_8h}{}\doxysection{Riferimenti per il file src/controlli.h}
+\label{controlli_8h}\index{src/controlli.h@{src/controlli.h}}
+
+
+File contenente tutti i metodi di validazione degli input dell\textquotesingle{}utente.  
+
+
+{\ttfamily \#include \char`\"{}definizioni.\+h\char`\"{}}\newline
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+unsigned short int \mbox{\hyperlink{controlli_8h_ae51ec93fff48f108317bc8c8d9891b77}{verifica\+\_\+esistenza\+\_\+codice\+\_\+in\+\_\+file\+\_\+programmi}} (int $\ast$codice, FILE $\ast$file\+\_\+programmi)
+\begin{DoxyCompactList}\small\item\em Procedura che verifica se il codice inserito è già presente nel file programmi. \end{DoxyCompactList}\item 
+unsigned short int \mbox{\hyperlink{controlli_8h_a6ce383060fc1b979a4f4dcfe8ea88330}{verifica\+\_\+esistenza\+\_\+codice\+\_\+in\+\_\+lista\+\_\+programmi}} (int $\ast$codice, const \mbox{\hyperlink{structlista__programmi__t}{lista\+\_\+programmi\+\_\+t}} $\ast$lista\+\_\+programmi)
+\begin{DoxyCompactList}\small\item\em Procedura che verifica se il codice inserito è già presente nella lista dei programmi. \end{DoxyCompactList}\item 
+unsigned short int \mbox{\hyperlink{controlli_8h_a1ad1c0f379c43809f933b81b4c79de5b}{verifica\+\_\+esistenza\+\_\+codice\+\_\+in\+\_\+lista\+\_\+suggeriti}} (int $\ast$codice, const \mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}} $\ast$lista\+\_\+programmi)
+\begin{DoxyCompactList}\small\item\em Procedura che verifica se il codice inserito è già presente nella lista dei programmi suggeriti. \end{DoxyCompactList}\item 
+unsigned short int \mbox{\hyperlink{controlli_8h_a429585c8a3f0a3212132058720dcc50c}{verifica\+\_\+esistenza\+\_\+codice\+\_\+in\+\_\+array}} (int $\ast$codice, int $\ast$array, int dimensione\+\_\+array)
+\begin{DoxyCompactList}\small\item\em Procedura che verifica se il codice inserito è già presente nell\textquotesingle{}array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+File contenente tutti i metodi di validazione degli input dell\textquotesingle{}utente. 
+
+In questo file sono contenuti dei metodi che effettuano dei controlli di validità dei dati, necessari per un corretto funzionamento del software.
+
+\begin{DoxyAuthor}{Autore}
+Alessandro Marra 
+
+Vito Natale 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{controlli_8h_a429585c8a3f0a3212132058720dcc50c}\label{controlli_8h_a429585c8a3f0a3212132058720dcc50c}} 
+\index{controlli.h@{controlli.h}!verifica\_esistenza\_codice\_in\_array@{verifica\_esistenza\_codice\_in\_array}}
+\index{verifica\_esistenza\_codice\_in\_array@{verifica\_esistenza\_codice\_in\_array}!controlli.h@{controlli.h}}
+\doxysubsubsection{\texorpdfstring{verifica\_esistenza\_codice\_in\_array()}{verifica\_esistenza\_codice\_in\_array()}}
+{\footnotesize\ttfamily unsigned short int verifica\+\_\+esistenza\+\_\+codice\+\_\+in\+\_\+array (\begin{DoxyParamCaption}\item[{int $\ast$}]{codice,  }\item[{int $\ast$}]{array,  }\item[{int}]{dimensione\+\_\+array }\end{DoxyParamCaption})}
+
+
+
+Procedura che verifica se il codice inserito è già presente nell\textquotesingle{}array. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$codice} & Codice da verificare \\
+\hline
+{\em $\ast$array} & Array di interi \\
+\hline
+{\em dimensione\+\_\+array} & Dimensione dell\textquotesingle{}array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Restituisce 1 se il codice è già presente all\textquotesingle{}interno dell\textquotesingle{}array, altrimenti 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{controlli_8h_ae51ec93fff48f108317bc8c8d9891b77}\label{controlli_8h_ae51ec93fff48f108317bc8c8d9891b77}} 
+\index{controlli.h@{controlli.h}!verifica\_esistenza\_codice\_in\_file\_programmi@{verifica\_esistenza\_codice\_in\_file\_programmi}}
+\index{verifica\_esistenza\_codice\_in\_file\_programmi@{verifica\_esistenza\_codice\_in\_file\_programmi}!controlli.h@{controlli.h}}
+\doxysubsubsection{\texorpdfstring{verifica\_esistenza\_codice\_in\_file\_programmi()}{verifica\_esistenza\_codice\_in\_file\_programmi()}}
+{\footnotesize\ttfamily unsigned short int verifica\+\_\+esistenza\+\_\+codice\+\_\+in\+\_\+file\+\_\+programmi (\begin{DoxyParamCaption}\item[{int $\ast$}]{codice,  }\item[{FILE $\ast$}]{file\+\_\+programmi }\end{DoxyParamCaption})}
+
+
+
+Procedura che verifica se il codice inserito è già presente nel file programmi. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$codice} & Codice da verificare \\
+\hline
+{\em $\ast$file\+\_\+programmi} & Riferimento al file dei programmi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Restituisce 1 se il codice è già presente all\textquotesingle{}interno del file, altrimenti 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{controlli_8h_a6ce383060fc1b979a4f4dcfe8ea88330}\label{controlli_8h_a6ce383060fc1b979a4f4dcfe8ea88330}} 
+\index{controlli.h@{controlli.h}!verifica\_esistenza\_codice\_in\_lista\_programmi@{verifica\_esistenza\_codice\_in\_lista\_programmi}}
+\index{verifica\_esistenza\_codice\_in\_lista\_programmi@{verifica\_esistenza\_codice\_in\_lista\_programmi}!controlli.h@{controlli.h}}
+\doxysubsubsection{\texorpdfstring{verifica\_esistenza\_codice\_in\_lista\_programmi()}{verifica\_esistenza\_codice\_in\_lista\_programmi()}}
+{\footnotesize\ttfamily unsigned short int verifica\+\_\+esistenza\+\_\+codice\+\_\+in\+\_\+lista\+\_\+programmi (\begin{DoxyParamCaption}\item[{int $\ast$}]{codice,  }\item[{const \mbox{\hyperlink{structlista__programmi__t}{lista\+\_\+programmi\+\_\+t}} $\ast$}]{lista\+\_\+programmi }\end{DoxyParamCaption})}
+
+
+
+Procedura che verifica se il codice inserito è già presente nella lista dei programmi. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$codice} & Codice da verificare \\
+\hline
+{\em $\ast$lista\+\_\+programmi} & Lista programmi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Restituisce 1 se il codice è già presente all\textquotesingle{}interno della lista, altrimenti 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{controlli_8h_a1ad1c0f379c43809f933b81b4c79de5b}\label{controlli_8h_a1ad1c0f379c43809f933b81b4c79de5b}} 
+\index{controlli.h@{controlli.h}!verifica\_esistenza\_codice\_in\_lista\_suggeriti@{verifica\_esistenza\_codice\_in\_lista\_suggeriti}}
+\index{verifica\_esistenza\_codice\_in\_lista\_suggeriti@{verifica\_esistenza\_codice\_in\_lista\_suggeriti}!controlli.h@{controlli.h}}
+\doxysubsubsection{\texorpdfstring{verifica\_esistenza\_codice\_in\_lista\_suggeriti()}{verifica\_esistenza\_codice\_in\_lista\_suggeriti()}}
+{\footnotesize\ttfamily unsigned short int verifica\+\_\+esistenza\+\_\+codice\+\_\+in\+\_\+lista\+\_\+suggeriti (\begin{DoxyParamCaption}\item[{int $\ast$}]{codice,  }\item[{const \mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}} $\ast$}]{lista\+\_\+programmi }\end{DoxyParamCaption})}
+
+
+
+Procedura che verifica se il codice inserito è già presente nella lista dei programmi suggeriti. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$codice} & Codice da verificare \\
+\hline
+{\em $\ast$lista\+\_\+programmi} & Lista programmi suggeriti \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Restituisce 1 se il codice è già presente all\textquotesingle{}interno della lista, altrimenti 0 
+\end{DoxyReturn}

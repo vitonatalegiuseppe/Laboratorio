@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Smart TV:  File sorgente src/utility.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Smart TV<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Cerca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">utility.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="utility_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef UTILITY_H_</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define UTILITY_H_</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="definizioni_8h.html">definizioni.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">void</span> <a class="code hl_function" href="utility_8h.html#a0521178dee53629d3d7f99cad679bb82">leggi_record</a>(FILE *file, <span class="keywordtype">int</span> *<span class="keywordtype">id</span>, <span class="keywordtype">size_t</span> dimensione_struct, <span class="keywordtype">void</span> *data);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">void</span> <a class="code hl_function" href="utility_8h.html#ad69523fbfe67ff288966ec8f756a7ff8">scrivi_record</a>(FILE *file, <span class="keywordtype">int</span> *<span class="keywordtype">id</span>, <span class="keywordtype">size_t</span> dimensione_struct, <span class="keywordtype">void</span> *data);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keywordtype">char</span>* <a class="code hl_function" href="utility_8h.html#ae820627c604996264bf69cd4bf92fdab">converti_in_minuscolo</a>(<span class="keywordtype">char</span> *parola, <span class="keywordtype">int</span> lunghezza);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="utility_8h.html#a27056c7f408232eb5b72df33c824f32c">nome_tipologia</a>(<a class="code hl_enumeration" href="definizioni_8h.html#ab9154babc016d316238941a26deac4c3">tipologia_e</a> tipologia);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="utility_8h.html#acde9c024b4f9afd6d6c231e577590982">nome_genere</a>(<a class="code hl_enumeration" href="definizioni_8h.html#a6d687920ee346c977d96de94804bfb36">genere_e</a> genere);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keywordtype">void</span> <a class="code hl_function" href="utility_8h.html#a8ec0aef15eb5d836de75782896bb12ec">aggiungi_valutazione</a>(<span class="keywordtype">short</span> <span class="keywordtype">int</span> *punteggio, <span class="keywordtype">int</span> valutazione);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keywordtype">int</span> <a class="code hl_function" href="utility_8h.html#acb20d2df8cd47a1bd67537fbcebf71f2">calcola_punteggio</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structutente__t.html">utente_t</a> *utente, <span class="keyword">const</span> <a class="code hl_struct" href="structprogramma__t.html">programma_t</a> *programma);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keywordtype">int</span> <a class="code hl_function" href="utility_8h.html#a98bc256cb405dd99aed34541022f17a3">genera_numero_casuale</a>(<span class="keywordtype">int</span> <a class="code hl_function" href="utility_8h.html#abd8bbcfabb3ddef2ccaafb9928a37b95">min</a>, <span class="keywordtype">int</span> max);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keywordtype">int</span> <a class="code hl_function" href="utility_8h.html#abd8bbcfabb3ddef2ccaafb9928a37b95">min</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><a class="code hl_struct" href="structlista__programmi__suggeriti__t.html">lista_programmi_suggeriti_t</a> <a class="code hl_function" href="utility_8h.html#a49f252b910eab0bf889dd06b4f218a9e">rimuovi_programma_suggerito</a>(<a class="code hl_struct" href="structlista__programmi__suggeriti__t.html">lista_programmi_suggeriti_t</a> lista, <span class="keywordtype">int</span> indice_da_rimuovere);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keywordtype">void</span> <a class="code hl_function" href="utility_8h.html#a469aeef5d04174d91653769cd2f7e3b1">alloca_memoria_programmi</a>(<a class="code hl_struct" href="structlista__programmi__t.html">lista_programmi_t</a> *lista);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="keywordtype">void</span> <a class="code hl_function" href="utility_8h.html#aa8687190ce0b1bfb30a8339e40e2e927">alloca_memoria_programmi_suggeriti</a>(<a class="code hl_struct" href="structlista__programmi__suggeriti__t.html">lista_programmi_suggeriti_t</a> *lista);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="keywordtype">void</span> <a class="code hl_function" href="utility_8h.html#aa9e75cf095177732899821c8a0bc7695">inserisci_suggerimento</a>(<a class="code hl_struct" href="structlista__programmi__suggeriti__t.html">lista_programmi_suggeriti_t</a> *lista, <span class="keywordtype">int</span> codice, <span class="keywordtype">char</span> *titolo, <span class="keywordtype">short</span> <span class="keywordtype">int</span> punteggio);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="preprocessor">#endif </span><span class="comment">/* UTILITY_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="adefinizioni_8h_html"><div class="ttname"><a href="definizioni_8h.html">definizioni.h</a></div><div class="ttdoc">File contenente la definizione di tutte le definizioni utili per una corretta implementazione del sof...</div></div>
+<div class="ttc" id="adefinizioni_8h_html_a6d687920ee346c977d96de94804bfb36"><div class="ttname"><a href="definizioni_8h.html#a6d687920ee346c977d96de94804bfb36">genere_e</a></div><div class="ttdeci">genere_e</div><div class="ttdef"><b>Definition:</b> definizioni.h:148</div></div>
+<div class="ttc" id="adefinizioni_8h_html_ab9154babc016d316238941a26deac4c3"><div class="ttname"><a href="definizioni_8h.html#ab9154babc016d316238941a26deac4c3">tipologia_e</a></div><div class="ttdeci">tipologia_e</div><div class="ttdef"><b>Definition:</b> definizioni.h:128</div></div>
+<div class="ttc" id="astructlista__programmi__suggeriti__t_html"><div class="ttname"><a href="structlista__programmi__suggeriti__t.html">lista_programmi_suggeriti_t</a></div><div class="ttdoc">Questa struttura dati rappresenta una lista di programmi suggeriti ed il numero di elementi di cui è ...</div><div class="ttdef"><b>Definition:</b> definizioni.h:247</div></div>
+<div class="ttc" id="astructlista__programmi__t_html"><div class="ttname"><a href="structlista__programmi__t.html">lista_programmi_t</a></div><div class="ttdoc">Questa struttura dati rappresenta una lista di programmi ed il numero di elementi di cui è composta.</div><div class="ttdef"><b>Definition:</b> definizioni.h:218</div></div>
+<div class="ttc" id="astructprogramma__t_html"><div class="ttname"><a href="structprogramma__t.html">programma_t</a></div><div class="ttdoc">Questa struttura dati rappresenta il programma televisivo presente sulla Smart TV.</div><div class="ttdef"><b>Definition:</b> definizioni.h:190</div></div>
+<div class="ttc" id="astructutente__t_html"><div class="ttname"><a href="structutente__t.html">utente_t</a></div><div class="ttdoc">Questa struttura dati rappresenta l'utente unico utilizzatore della Smart TV.</div><div class="ttdef"><b>Definition:</b> definizioni.h:172</div></div>
+<div class="ttc" id="autility_8h_html_a0521178dee53629d3d7f99cad679bb82"><div class="ttname"><a href="utility_8h.html#a0521178dee53629d3d7f99cad679bb82">leggi_record</a></div><div class="ttdeci">void leggi_record(FILE *file, int *id, size_t dimensione_struct, void *data)</div><div class="ttdoc">Metodo di lettura di un record da un file.</div><div class="ttdef"><b>Definition:</b> utility.c:13</div></div>
+<div class="ttc" id="autility_8h_html_a27056c7f408232eb5b72df33c824f32c"><div class="ttname"><a href="utility_8h.html#a27056c7f408232eb5b72df33c824f32c">nome_tipologia</a></div><div class="ttdeci">const char * nome_tipologia(tipologia_e tipologia)</div><div class="ttdoc">Funzione di conversione di una tipologia televisiva in stringa.</div><div class="ttdef"><b>Definition:</b> utility.c:36</div></div>
+<div class="ttc" id="autility_8h_html_a469aeef5d04174d91653769cd2f7e3b1"><div class="ttname"><a href="utility_8h.html#a469aeef5d04174d91653769cd2f7e3b1">alloca_memoria_programmi</a></div><div class="ttdeci">void alloca_memoria_programmi(lista_programmi_t *lista)</div><div class="ttdoc">Funzione booleana di allocazione memoria ad una lista_programmi_t.</div><div class="ttdef"><b>Definition:</b> utility.c:170</div></div>
+<div class="ttc" id="autility_8h_html_a49f252b910eab0bf889dd06b4f218a9e"><div class="ttname"><a href="utility_8h.html#a49f252b910eab0bf889dd06b4f218a9e">rimuovi_programma_suggerito</a></div><div class="ttdeci">lista_programmi_suggeriti_t rimuovi_programma_suggerito(lista_programmi_suggeriti_t lista, int indice_da_rimuovere)</div><div class="ttdoc">Procedura di rimozione di un programma suggerito da una lista.</div><div class="ttdef"><b>Definition:</b> utility.c:152</div></div>
+<div class="ttc" id="autility_8h_html_a8ec0aef15eb5d836de75782896bb12ec"><div class="ttname"><a href="utility_8h.html#a8ec0aef15eb5d836de75782896bb12ec">aggiungi_valutazione</a></div><div class="ttdeci">void aggiungi_valutazione(short int *punteggio, int valutazione)</div><div class="ttdoc">Funzione booleana di calcolo punteggio in base alla valutazione del programma.</div><div class="ttdef"><b>Definition:</b> utility.c:88</div></div>
+<div class="ttc" id="autility_8h_html_a98bc256cb405dd99aed34541022f17a3"><div class="ttname"><a href="utility_8h.html#a98bc256cb405dd99aed34541022f17a3">genera_numero_casuale</a></div><div class="ttdeci">int genera_numero_casuale(int min, int max)</div><div class="ttdoc">Procedura di generazione di un numero casuale.</div><div class="ttdef"><b>Definition:</b> utility.c:132</div></div>
+<div class="ttc" id="autility_8h_html_aa8687190ce0b1bfb30a8339e40e2e927"><div class="ttname"><a href="utility_8h.html#aa8687190ce0b1bfb30a8339e40e2e927">alloca_memoria_programmi_suggeriti</a></div><div class="ttdeci">void alloca_memoria_programmi_suggeriti(lista_programmi_suggeriti_t *lista)</div><div class="ttdoc">Funzione booleana di allocazione memoria ad una lista_programmi_suggeriti_t.</div><div class="ttdef"><b>Definition:</b> utility.c:179</div></div>
+<div class="ttc" id="autility_8h_html_aa9e75cf095177732899821c8a0bc7695"><div class="ttname"><a href="utility_8h.html#aa9e75cf095177732899821c8a0bc7695">inserisci_suggerimento</a></div><div class="ttdeci">void inserisci_suggerimento(lista_programmi_suggeriti_t *lista, int codice, char *titolo, short int punteggio)</div><div class="ttdoc">Funzione booleana di inserimento di un suggerimento in una lista di programmi suggeriti.</div><div class="ttdef"><b>Definition:</b> utility.c:188</div></div>
+<div class="ttc" id="autility_8h_html_abd8bbcfabb3ddef2ccaafb9928a37b95"><div class="ttname"><a href="utility_8h.html#abd8bbcfabb3ddef2ccaafb9928a37b95">min</a></div><div class="ttdeci">int min(int a, int b)</div><div class="ttdoc">Procedura di calcolo del minimo tra due numeri.</div><div class="ttdef"><b>Definition:</b> utility.c:142</div></div>
+<div class="ttc" id="autility_8h_html_acb20d2df8cd47a1bd67537fbcebf71f2"><div class="ttname"><a href="utility_8h.html#acb20d2df8cd47a1bd67537fbcebf71f2">calcola_punteggio</a></div><div class="ttdeci">int calcola_punteggio(const utente_t *utente, const programma_t *programma)</div><div class="ttdoc">Procedura per il calcolo del punteggio utile per i suggerimenti.</div><div class="ttdef"><b>Definition:</b> utility.c:110</div></div>
+<div class="ttc" id="autility_8h_html_acde9c024b4f9afd6d6c231e577590982"><div class="ttname"><a href="utility_8h.html#acde9c024b4f9afd6d6c231e577590982">nome_genere</a></div><div class="ttdeci">const char * nome_genere(genere_e genere)</div><div class="ttdoc">Funzione di conversione di un genere televisivo in stringa.</div><div class="ttdef"><b>Definition:</b> utility.c:57</div></div>
+<div class="ttc" id="autility_8h_html_ad69523fbfe67ff288966ec8f756a7ff8"><div class="ttname"><a href="utility_8h.html#ad69523fbfe67ff288966ec8f756a7ff8">scrivi_record</a></div><div class="ttdeci">void scrivi_record(FILE *file, int *id, size_t dimensione_struct, void *data)</div><div class="ttdoc">Metodo di inserimento di un record ad un file.</div><div class="ttdef"><b>Definition:</b> utility.c:19</div></div>
+<div class="ttc" id="autility_8h_html_ae820627c604996264bf69cd4bf92fdab"><div class="ttname"><a href="utility_8h.html#ae820627c604996264bf69cd4bf92fdab">converti_in_minuscolo</a></div><div class="ttdeci">char * converti_in_minuscolo(char *parola, int lunghezza)</div><div class="ttdoc">Funzione di conversione stringa in minuscolo.</div><div class="ttdef"><b>Definition:</b> utility.c:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

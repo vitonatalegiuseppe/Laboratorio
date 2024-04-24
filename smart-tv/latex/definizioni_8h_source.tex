@@ -1,0 +1,151 @@
+\hypertarget{definizioni_8h_source}{}\doxysection{definizioni.\+h}
+\label{definizioni_8h_source}\index{src/definizioni.h@{src/definizioni.h}}
+\mbox{\hyperlink{definizioni_8h}{Vai alla documentazione di questo file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#ifndef DEFINIZIONI\_H\_}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define DEFINIZIONI\_H\_}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define VALUTAZIONE\_MINIMA 1}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define VALUTAZIONE\_MASSIMA 5}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#define RISPOSTA\_MIN\_MENU 1}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#define RISPOSTA\_MAX\_MENU\_PRINCIPALE 6}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define RISPOSTA\_MAX\_MENU\_PROGRAMMI 4}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#define RISPOSTA\_MAX\_MENU\_UTENTI 2}}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#define RISPOSTA\_MAX\_MENU\_SUGGERIMENTI 2}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{62 \textcolor{preprocessor}{\#define RISPOSTA\_MAX\_MENU\_MODIFICA\_PROGRAMMI 4}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{68 \textcolor{preprocessor}{\#define RISPOSTA\_MAX\_MENU\_MODIFICA\_UTENTI 4}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{74 \textcolor{preprocessor}{\#define NUMERO\_MIN\_CODICE\_PROGRAMMA 1}}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{80 \textcolor{preprocessor}{\#define NUMERO\_MAX\_CODICE\_PROGRAMMA 999}}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{86 \textcolor{preprocessor}{\#define LUNGHEZZA\_MAX\_TITOLO\_PROGRAMMA 31}}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{92 \textcolor{preprocessor}{\#define LUNGHEZZA\_MAX\_DESCRIZIONE\_PROGRAMMA 51}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{98 \textcolor{preprocessor}{\#define LUNGHEZZA\_MAX\_NOME\_UTENTE 21}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{104 \textcolor{preprocessor}{\#define LUNGHEZZA\_MAX\_COGNOME\_UTENTE 21}}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{110 \textcolor{preprocessor}{\#define NUMERO\_MAX\_TIPOLOGIE\_PREFERITE\_UTENTE 3}}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{116 \textcolor{preprocessor}{\#define NUMERO\_MAX\_GENERI\_PREFERITI\_UTENTE 5}}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{122 \textcolor{preprocessor}{\#define NUMERO\_MAX\_PROGRAMMI\_SUGGERITI 10}}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{128 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{129     \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3ae6a96f2b64338857387a0a809bff471b}{SERIE}} = 1, }
+\DoxyCodeLine{130     \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3aed6a294d036e467ef19147b033d466c4}{DOCUMENTARI}}, }
+\DoxyCodeLine{131     \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3a52ba815184f05f286836542ab991d550}{FILM}}, }
+\DoxyCodeLine{132     \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3a4642b63223cfda2e47a7c3bb797d777c}{INTRATTENIMENTO}}, }
+\DoxyCodeLine{133     \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3a8fef09365ab9669f970c115a9afa2cc7}{BAMBINI}}, }
+\DoxyCodeLine{134     \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3a9f5c34156f3ed9d7e92abf57a9fd76ba}{INFORMAZIONE}} }
+\DoxyCodeLine{135 \} \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3}{tipologia\_e}};}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{141 \textcolor{preprocessor}{\#define NUMERO\_TIPOLOGIE\_PROGRAMMA 6}}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143 }
+\DoxyCodeLine{148 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{149     \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36a9accf37bd56d5685eaadf77d9c08c5d4}{FANTASCIENZA}} = 1, }
+\DoxyCodeLine{150     \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36a9bbe5f97556dac6f4a1d5fdf9c68ee2a}{CUCINA}}, }
+\DoxyCodeLine{151     \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36a7855025f93ec61483a6d738e930ee1a0}{NATURA}}, }
+\DoxyCodeLine{152     \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36a956b9eef94661d496f43e5e155353408}{SPORT}}, }
+\DoxyCodeLine{153     \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab22a16658e739af3ff474f4294f34047}{STORICO}}, }
+\DoxyCodeLine{154     \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36aec124b1bffa2283e22244c7948eb649c}{HORROR}}, }
+\DoxyCodeLine{155     \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab1f2d02c9f945c02cfcd1954af5c6c93}{ATTUALITA}}, }
+\DoxyCodeLine{156     \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab4109932e2d18eb887f31bc4e542f92a}{COMICO}}, }
+\DoxyCodeLine{157     \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36a5781c8f452ef921d8f106a501e93d5ba}{DRAMMATICO}}, }
+\DoxyCodeLine{158     \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36a3395c05c9ddf5f016e711ac2a2baee86}{FANTASY}}, }
+\DoxyCodeLine{159     \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab29f6edc9ad0ffe3ab1f062395d1a15f}{ROMANTICO}} }
+\DoxyCodeLine{160 \} \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36}{genere\_e}};}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{166 \textcolor{preprocessor}{\#define NUMERO\_GENERI\_PROGRAMMA 11}}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168 }
+\DoxyCodeLine{172 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{174     \textcolor{keywordtype}{char} nome[\mbox{\hyperlink{definizioni_8h_ace757b2ef816d55d9d68508f3df0115e}{LUNGHEZZA\_MAX\_NOME\_UTENTE}}];}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{177     \textcolor{keywordtype}{char} cognome[\mbox{\hyperlink{definizioni_8h_ae618401ebf30ee4494922d6a5b9f5f05}{LUNGHEZZA\_MAX\_COGNOME\_UTENTE}}];}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{180     \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3}{tipologia\_e}} tipologie\_preferite[\mbox{\hyperlink{definizioni_8h_a05e7ca0c741888427620fc9c0823095b}{NUMERO\_MAX\_TIPOLOGIE\_PREFERITE\_UTENTE}}];}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{183     \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36}{genere\_e}} generi\_preferiti[\mbox{\hyperlink{definizioni_8h_a6dddbb3e14c1dbf8894196f551e2e2f2}{NUMERO\_MAX\_GENERI\_PREFERITI\_UTENTE}}];}
+\DoxyCodeLine{184 }
+\DoxyCodeLine{185 \} \mbox{\hyperlink{structutente__t}{utente\_t}};}
+\DoxyCodeLine{186 }
+\DoxyCodeLine{190 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{192     \textcolor{keywordtype}{int} \mbox{\hyperlink{structprogramma__t_a0594f4f3fa442616c3a36130e5ccd231}{codice\_programma}};}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{195     \textcolor{keywordtype}{char} titolo[\mbox{\hyperlink{definizioni_8h_aa3036e28dae9646f418b359f933c8860}{LUNGHEZZA\_MAX\_TITOLO\_PROGRAMMA}}];}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{198     \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3}{tipologia\_e}} \mbox{\hyperlink{structprogramma__t_af74bf6f18eb6087f641e5a23f70dc486}{tipologia}};}
+\DoxyCodeLine{199 }
+\DoxyCodeLine{201     \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36}{genere\_e}} \mbox{\hyperlink{structprogramma__t_a85ac2ab5a71fc323feed15045683e2b6}{genere}};}
+\DoxyCodeLine{202 }
+\DoxyCodeLine{204     \textcolor{keywordtype}{char} descrizione[\mbox{\hyperlink{definizioni_8h_ae33649df1408656c0e1cf230e94630a8}{LUNGHEZZA\_MAX\_DESCRIZIONE\_PROGRAMMA}}];}
+\DoxyCodeLine{205 }
+\DoxyCodeLine{207     \textcolor{keywordtype}{int} \mbox{\hyperlink{structprogramma__t_ac6c07882a044f1d0455c90e8129ab7ad}{valutazione}};}
+\DoxyCodeLine{208 }
+\DoxyCodeLine{210     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{structprogramma__t_aa3bda7f4eef37bcd76488ef927320614}{suggerito}};}
+\DoxyCodeLine{211 }
+\DoxyCodeLine{212 \} \mbox{\hyperlink{structprogramma__t}{programma\_t}};}
+\DoxyCodeLine{213 }
+\DoxyCodeLine{214 }
+\DoxyCodeLine{218 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{220     \mbox{\hyperlink{structprogramma__t}{programma\_t}}* \mbox{\hyperlink{structlista__programmi__t_a7afc10ce374fbda83e5011789555e182}{lista\_programmi}};}
+\DoxyCodeLine{221 }
+\DoxyCodeLine{223     \textcolor{keywordtype}{int} \mbox{\hyperlink{structlista__programmi__t_a49f14a06de57d3fb8340b1871b4b59ed}{numero\_programmi}};}
+\DoxyCodeLine{224 }
+\DoxyCodeLine{225 \} \mbox{\hyperlink{structlista__programmi__t}{lista\_programmi\_t}};}
+\DoxyCodeLine{226 }
+\DoxyCodeLine{227 }
+\DoxyCodeLine{231 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{233     \textcolor{keywordtype}{int} \mbox{\hyperlink{structsuggerimento__t_af8be6786b216fc468b74fe079c649ec9}{codice\_programma}};}
+\DoxyCodeLine{234 }
+\DoxyCodeLine{236     \textcolor{keywordtype}{char} titolo\_programma[\mbox{\hyperlink{definizioni_8h_aa3036e28dae9646f418b359f933c8860}{LUNGHEZZA\_MAX\_TITOLO\_PROGRAMMA}}];}
+\DoxyCodeLine{237 }
+\DoxyCodeLine{239     \textcolor{keywordtype}{short} \textcolor{keywordtype}{int} \mbox{\hyperlink{structsuggerimento__t_a8f8515df9de50abfda56f7d9a83605b5}{punteggio}};}
+\DoxyCodeLine{240 }
+\DoxyCodeLine{241 \} \mbox{\hyperlink{structsuggerimento__t}{suggerimento\_t}};}
+\DoxyCodeLine{242 }
+\DoxyCodeLine{243 }
+\DoxyCodeLine{247 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{249     \mbox{\hyperlink{structsuggerimento__t}{suggerimento\_t}}* \mbox{\hyperlink{structlista__programmi__suggeriti__t_a788f077123472b0a8991c526ff27afbd}{lista\_programmi}};}
+\DoxyCodeLine{250 }
+\DoxyCodeLine{252     \textcolor{keywordtype}{int} \mbox{\hyperlink{structlista__programmi__suggeriti__t_a1d20f0901f1da1e4b3ab1f6e14604bbe}{numero\_programmi}};}
+\DoxyCodeLine{253 }
+\DoxyCodeLine{254 \} \mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\_programmi\_suggeriti\_t}};}
+\DoxyCodeLine{255 }
+\DoxyCodeLine{256 }
+\DoxyCodeLine{261 \textcolor{preprocessor}{\#define PUNTEGGIO\_TIPOLOGIA 1}}
+\DoxyCodeLine{262 }
+\DoxyCodeLine{267 \textcolor{preprocessor}{\#define PUNTEGGIO\_GENERE 1}}
+\DoxyCodeLine{268 }
+\DoxyCodeLine{273 \textcolor{preprocessor}{\#define PUNTEGGIO\_VALUTAZIONE\_5 2}}
+\DoxyCodeLine{274 }
+\DoxyCodeLine{279 \textcolor{preprocessor}{\#define PUNTEGGIO\_VALUTAZIONE\_4 1}}
+\DoxyCodeLine{280 }
+\DoxyCodeLine{285 \textcolor{preprocessor}{\#define PUNTEGGIO\_VALUTAZIONE\_3 0}}
+\DoxyCodeLine{286 }
+\DoxyCodeLine{291 \textcolor{preprocessor}{\#define PUNTEGGIO\_VALUTAZIONE\_2 -\/1}}
+\DoxyCodeLine{292 }
+\DoxyCodeLine{297 \textcolor{preprocessor}{\#define PUNTEGGIO\_VALUTAZIONE\_1 -\/2}}
+\DoxyCodeLine{298 }
+\DoxyCodeLine{303 \textcolor{preprocessor}{\#define PUNTEGGIO\_VALUTAZIONE\_0 0}}
+\DoxyCodeLine{304 }
+\DoxyCodeLine{305 }
+\DoxyCodeLine{306 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* DEFINIZIONI\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

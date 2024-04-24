@@ -1,0 +1,201 @@
+\hypertarget{funzionalita__programmi_8h}{}\doxysection{Riferimenti per il file src/funzionalita\+\_\+programmi.h}
+\label{funzionalita__programmi_8h}\index{src/funzionalita\_programmi.h@{src/funzionalita\_programmi.h}}
+
+
+File contenente gli algoritmi utili per la realizzazione delle funzionalità del software Algoritmi di ricerca, algoritmi di ordinamento.  
+
+
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{funzionalita__programmi_8h_a0569c37d0361aac74014b82b86492949}{stampa\+\_\+elenco\+\_\+programmi\+\_\+da\+\_\+file}} (FILE $\ast$file\+\_\+programmi)
+\begin{DoxyCompactList}\small\item\em Metodo di lettura dei programmi televisivi da file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funzionalita__programmi_8h_adb00a4edf48f05a33e22764f056a2ca9}{inserisci\+\_\+programma}} (FILE $\ast$file\+\_\+programmi)
+\begin{DoxyCompactList}\small\item\em Metodo di inserimento di programma televisivi all\textquotesingle{}interno del file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funzionalita__programmi_8h_a0d110ee775c3be43a34b8b9f81dfeb76}{modifica\+\_\+programma}} (FILE $\ast$file\+\_\+programmi)
+\begin{DoxyCompactList}\small\item\em Metodo di modifica dei programmi televisivi da file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funzionalita__programmi_8h_a9119022a611b1ca9f47913da7e5d50d6}{elimina\+\_\+programma}} (FILE $\ast$file\+\_\+programmi)
+\begin{DoxyCompactList}\small\item\em Metodo di eliminazione dei programmi televisivi da file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structlista__programmi__t}{lista\+\_\+programmi\+\_\+t}} \mbox{\hyperlink{funzionalita__programmi_8h_a38c3ebdc56762000502d183a042754d6}{ricerca\+\_\+programmi}} (FILE $\ast$file\+\_\+programmi)
+\begin{DoxyCompactList}\small\item\em Procedura di ricerca dei programmi televisivi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funzionalita__programmi_8h_a3432a230a3d5db92198f38f065eb3165}{ordinamento\+\_\+programmi}} (FILE $\ast$file\+\_\+programmi)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di ordinamento programmi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funzionalita__programmi_8h_a7e5d61f307a9c5e0c4b05f4ebf09967d}{valuta\+\_\+programma}} (FILE $\ast$file\+\_\+programmi)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di valutazione programma televisivo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funzionalita__programmi_8h_ac0c12b7e152c870582848679b50fe93c}{suggerimento\+\_\+programmi}} (FILE $\ast$file\+\_\+programmi, FILE $\ast$file\+\_\+utenti)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di suggerimento programmi televisivi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funzionalita__programmi_8h_afd19f59e455dfb46ae3af9e0412a0cdf}{richiedi\+\_\+visione\+\_\+suggerimento}} (FILE $\ast$file\+\_\+programmi, \mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}} lista\+\_\+programmi\+\_\+suggeriti)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di visione programma televisivo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+File contenente gli algoritmi utili per la realizzazione delle funzionalità del software Algoritmi di ricerca, algoritmi di ordinamento. 
+
+\begin{DoxyAuthor}{Autore}
+Alessandro Marra 
+
+Vito Natale 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{funzionalita__programmi_8h_a9119022a611b1ca9f47913da7e5d50d6}\label{funzionalita__programmi_8h_a9119022a611b1ca9f47913da7e5d50d6}} 
+\index{funzionalita\_programmi.h@{funzionalita\_programmi.h}!elimina\_programma@{elimina\_programma}}
+\index{elimina\_programma@{elimina\_programma}!funzionalita\_programmi.h@{funzionalita\_programmi.h}}
+\doxysubsubsection{\texorpdfstring{elimina\_programma()}{elimina\_programma()}}
+{\footnotesize\ttfamily void elimina\+\_\+programma (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file\+\_\+programmi }\end{DoxyParamCaption})}
+
+
+
+Metodo di eliminazione dei programmi televisivi da file. 
+
+La funzione consente di effettuare la ricerca di un programma (per titolo e descrizione) tramite \mbox{\hyperlink{funzionalita__programmi_8h_a38c3ebdc56762000502d183a042754d6}{ricerca\+\_\+programmi}}. Viene acquisito il codice del programma da eliminare e viene aggiornato il file dei programmi.
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file\+\_\+programmi} & Puntatore del file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funzionalita__programmi_8h_adb00a4edf48f05a33e22764f056a2ca9}\label{funzionalita__programmi_8h_adb00a4edf48f05a33e22764f056a2ca9}} 
+\index{funzionalita\_programmi.h@{funzionalita\_programmi.h}!inserisci\_programma@{inserisci\_programma}}
+\index{inserisci\_programma@{inserisci\_programma}!funzionalita\_programmi.h@{funzionalita\_programmi.h}}
+\doxysubsubsection{\texorpdfstring{inserisci\_programma()}{inserisci\_programma()}}
+{\footnotesize\ttfamily void inserisci\+\_\+programma (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file\+\_\+programmi }\end{DoxyParamCaption})}
+
+
+
+Metodo di inserimento di programma televisivi all\textquotesingle{}interno del file. 
+
+All\textquotesingle{}utente vengono richiesti tutti i dettagli del programma televisivo da inserire. Il programma acquisito viene salvato all\textquotesingle{}interno del {\ttfamily $\ast$file\+\_\+programmi} 
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file\+\_\+programmi} & Puntatore del file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funzionalita__programmi_8h_a0d110ee775c3be43a34b8b9f81dfeb76}\label{funzionalita__programmi_8h_a0d110ee775c3be43a34b8b9f81dfeb76}} 
+\index{funzionalita\_programmi.h@{funzionalita\_programmi.h}!modifica\_programma@{modifica\_programma}}
+\index{modifica\_programma@{modifica\_programma}!funzionalita\_programmi.h@{funzionalita\_programmi.h}}
+\doxysubsubsection{\texorpdfstring{modifica\_programma()}{modifica\_programma()}}
+{\footnotesize\ttfamily void modifica\+\_\+programma (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file\+\_\+programmi }\end{DoxyParamCaption})}
+
+
+
+Metodo di modifica dei programmi televisivi da file. 
+
+La funzione consente di effettuare la ricerca di un programma (per titolo e descrizione) tramite \mbox{\hyperlink{funzionalita__programmi_8h_a38c3ebdc56762000502d183a042754d6}{ricerca\+\_\+programmi}}. Viene acquisito il codice del programma da modificare. Tramite un sottomenu dedicato (\mbox{\hyperlink{comunicazione_8h_a6953221fed288bd23e00d929c13c3580}{stampa\+\_\+menu\+\_\+modifica\+\_\+programma}}) vengono richieste le informazioni da modificare Il programma modificato viene aggiornato all\textquotesingle{}interno del {\ttfamily $\ast$file\+\_\+programmi} 
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file\+\_\+programmi} & Puntatore del file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funzionalita__programmi_8h_a3432a230a3d5db92198f38f065eb3165}\label{funzionalita__programmi_8h_a3432a230a3d5db92198f38f065eb3165}} 
+\index{funzionalita\_programmi.h@{funzionalita\_programmi.h}!ordinamento\_programmi@{ordinamento\_programmi}}
+\index{ordinamento\_programmi@{ordinamento\_programmi}!funzionalita\_programmi.h@{funzionalita\_programmi.h}}
+\doxysubsubsection{\texorpdfstring{ordinamento\_programmi()}{ordinamento\_programmi()}}
+{\footnotesize\ttfamily void ordinamento\+\_\+programmi (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file\+\_\+programmi }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di ordinamento programmi. 
+
+La funzione acquisisce l\textquotesingle{}elenco completo dei programmi dal {\ttfamily file\+\_\+programmi$\ast$} Applica l\textquotesingle{}algoritmo \mbox{\hyperlink{ordinamento_8h_a92436a09e616f16175fc54cc741c2f2d}{quick\+Sort}} per ordinarli Utilizza il metodo \mbox{\hyperlink{comunicazione_8h_ab89b1dcbe352f52dfb77f5cb0e5edd08}{stampa\+\_\+programma}} per la visualizzazione della lista ordinata
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file\+\_\+programmi} & Puntatore al file dei programmi \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funzionalita__programmi_8h_a38c3ebdc56762000502d183a042754d6}\label{funzionalita__programmi_8h_a38c3ebdc56762000502d183a042754d6}} 
+\index{funzionalita\_programmi.h@{funzionalita\_programmi.h}!ricerca\_programmi@{ricerca\_programmi}}
+\index{ricerca\_programmi@{ricerca\_programmi}!funzionalita\_programmi.h@{funzionalita\_programmi.h}}
+\doxysubsubsection{\texorpdfstring{ricerca\_programmi()}{ricerca\_programmi()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlista__programmi__t}{lista\+\_\+programmi\+\_\+t}} ricerca\+\_\+programmi (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file\+\_\+programmi }\end{DoxyParamCaption})}
+
+
+
+Procedura di ricerca dei programmi televisivi. 
+
+La funzione acquisisce una stringa che verrà ricercata all\textquotesingle{}interno di titolo e descrizione dei programmi presenti sul file. La ricerca è tipo case insensitive e funzione su sottostringhe. Viene restituita una struttura dati \mbox{\hyperlink{structlista__programmi__t}{lista\+\_\+programmi\+\_\+t}} contenente la lista dei programmi trovati ed il numero di elementi di cui è composta la lista dei risultati. Questa procedura è generica e viene utilizzata in funzionalità differenti (ricerca programmi, modifica programma, eliminazione programma, valutazione programma)
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file\+\_\+programmi} & Puntatore al file dei programmi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Lista dei programmi trovati 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funzionalita__programmi_8h_afd19f59e455dfb46ae3af9e0412a0cdf}\label{funzionalita__programmi_8h_afd19f59e455dfb46ae3af9e0412a0cdf}} 
+\index{funzionalita\_programmi.h@{funzionalita\_programmi.h}!richiedi\_visione\_suggerimento@{richiedi\_visione\_suggerimento}}
+\index{richiedi\_visione\_suggerimento@{richiedi\_visione\_suggerimento}!funzionalita\_programmi.h@{funzionalita\_programmi.h}}
+\doxysubsubsection{\texorpdfstring{richiedi\_visione\_suggerimento()}{richiedi\_visione\_suggerimento()}}
+{\footnotesize\ttfamily void richiedi\+\_\+visione\+\_\+suggerimento (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file\+\_\+programmi,  }\item[{\mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}}}]{lista\+\_\+programmi\+\_\+suggeriti }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di visione programma televisivo. 
+
+L\textquotesingle{}utente può scegliere se contrassegnare uno dei programmi come visionato (non sarà più suggerito successivamente)
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file\+\_\+programmi} & Puntatore al file dei programmi \\
+\hline
+{\em lista\+\_\+programmi\+\_\+suggeriti} & Elenco dei programmi suggeriti dai quali scegliere il programma da visionare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funzionalita__programmi_8h_a0569c37d0361aac74014b82b86492949}\label{funzionalita__programmi_8h_a0569c37d0361aac74014b82b86492949}} 
+\index{funzionalita\_programmi.h@{funzionalita\_programmi.h}!stampa\_elenco\_programmi\_da\_file@{stampa\_elenco\_programmi\_da\_file}}
+\index{stampa\_elenco\_programmi\_da\_file@{stampa\_elenco\_programmi\_da\_file}!funzionalita\_programmi.h@{funzionalita\_programmi.h}}
+\doxysubsubsection{\texorpdfstring{stampa\_elenco\_programmi\_da\_file()}{stampa\_elenco\_programmi\_da\_file()}}
+{\footnotesize\ttfamily void stampa\+\_\+elenco\+\_\+programmi\+\_\+da\+\_\+file (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file\+\_\+programmi }\end{DoxyParamCaption})}
+
+
+
+Metodo di lettura dei programmi televisivi da file. 
+
+La funzione legge tutti i programmi televisivi presenti nel file {\ttfamily $\ast$file\+\_\+programmi} e li stampa utilizzando la funzione \mbox{\hyperlink{comunicazione_8h_ab89b1dcbe352f52dfb77f5cb0e5edd08}{stampa\+\_\+programma}}
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file\+\_\+programmi} & Puntatore del file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funzionalita__programmi_8h_ac0c12b7e152c870582848679b50fe93c}\label{funzionalita__programmi_8h_ac0c12b7e152c870582848679b50fe93c}} 
+\index{funzionalita\_programmi.h@{funzionalita\_programmi.h}!suggerimento\_programmi@{suggerimento\_programmi}}
+\index{suggerimento\_programmi@{suggerimento\_programmi}!funzionalita\_programmi.h@{funzionalita\_programmi.h}}
+\doxysubsubsection{\texorpdfstring{suggerimento\_programmi()}{suggerimento\_programmi()}}
+{\footnotesize\ttfamily void suggerimento\+\_\+programmi (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file\+\_\+programmi,  }\item[{FILE $\ast$}]{file\+\_\+utenti }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di suggerimento programmi televisivi. 
+
+La funzione applica un criterio di priorità incrociando le preferenze utente e le caratteristiche dei programmi non ancora suggeriti. La lista programmi suggeriti viene mostrata all\textquotesingle{}utente (\mbox{\hyperlink{comunicazione_8h_ae143eaef835adb02825be356ad76a226}{stampa\+\_\+programma\+\_\+suggerito}}) L\textquotesingle{}utente può scegliere se contrassegnare uno dei programmi come visionato (non sarà più suggerito successivamente)
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file\+\_\+programmi} & Puntatore al file dei programmi \\
+\hline
+{\em $\ast$file\+\_\+utenti} & Puntatore al file degli utenti \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funzionalita__programmi_8h_a7e5d61f307a9c5e0c4b05f4ebf09967d}\label{funzionalita__programmi_8h_a7e5d61f307a9c5e0c4b05f4ebf09967d}} 
+\index{funzionalita\_programmi.h@{funzionalita\_programmi.h}!valuta\_programma@{valuta\_programma}}
+\index{valuta\_programma@{valuta\_programma}!funzionalita\_programmi.h@{funzionalita\_programmi.h}}
+\doxysubsubsection{\texorpdfstring{valuta\_programma()}{valuta\_programma()}}
+{\footnotesize\ttfamily void valuta\+\_\+programma (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file\+\_\+programmi }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di valutazione programma televisivo. 
+
+La funzione consente di effettuare la ricerca di un programma (per titolo e descrizione) tramite \mbox{\hyperlink{funzionalita__programmi_8h_a38c3ebdc56762000502d183a042754d6}{ricerca\+\_\+programmi}}. Viene acquisito il codice del programma da valutare. Il programma valutato viene aggiornato all\textquotesingle{}interno del {\ttfamily $\ast$file\+\_\+programmi} 
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file\+\_\+programmi} & Puntatore del file \\
+\hline
+\end{DoxyParams}

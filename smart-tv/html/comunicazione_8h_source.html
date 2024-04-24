@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Smart TV:  File sorgente src/comunicazione.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Smart TV<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Cerca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">comunicazione.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="comunicazione_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef COMUNICAZIONE_H_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define COMUNICAZIONE_H_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="definizioni_8h.html">definizioni.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#af19db39fb5a1043df53d111553f1d1d3">stampa_menu_principale</a>();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#a253f2a88e0263f686c9fe3aea44b61b2">stampa_menu_programmi</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#a9877001858f655a9acfd71e2a5ce8cab">stampa_menu_utente</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#a5273586695bd4f9cb926fd60d46a61e0">stampa_utente</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structutente__t.html">utente_t</a>* utente);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#a6953221fed288bd23e00d929c13c3580">stampa_menu_modifica_programma</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#a66a17fe9695271a13af45c78845e5373">stampa_menu_modifica_utente</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#ad7eb7f2d6e6b2a65ce7a2ed31eed78c7">stampa_tipologie</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#a507fdf36911fecc86fa91262f62f9a58">stampa_generi</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#ab89b1dcbe352f52dfb77f5cb0e5edd08">stampa_programma</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structprogramma__t.html">programma_t</a>* programma);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#a80a5f92b9085edf2858311b84945f7b4">stampa_elenco_programmi</a>(<a class="code hl_struct" href="structlista__programmi__t.html">lista_programmi_t</a> lista_programmi);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#ae143eaef835adb02825be356ad76a226">stampa_programma_suggerito</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structsuggerimento__t.html">suggerimento_t</a>* suggerimento);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code hl_function" href="comunicazione_8h.html#ac2a15db718c62fed0d0d03d67e19749e">ripeti_operazione</a>(<span class="keywordtype">char</span>* testo);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#a39efc26a590d42d81716988ccd0a4aaf">acquisisci_stringa</a>(<span class="keywordtype">char</span> *testo, <span class="keywordtype">char</span> *input, <span class="keywordtype">int</span> lunghezza_massima);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#a8bddd867033d374bf521a44a8319bf1d">acquisisci_numero</a>(<span class="keywordtype">char</span> *testo, <span class="keywordtype">int</span> *input, <span class="keywordtype">int</span> numero_minimo, <span class="keywordtype">int</span> numero_massimo);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keywordtype">void</span> <a class="code hl_function" href="comunicazione_8h.html#a6f41dc64d28912d4342bd93bc4c034aa">acquisisci_numero_con_condizione_di_uscita</a>(<span class="keywordtype">char</span> *testo, <span class="keywordtype">int</span> *input, <span class="keywordtype">int</span> numero_minimo, <span class="keywordtype">int</span> numero_massimo);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#endif </span><span class="comment">/* COMUNICAZIONE_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="acomunicazione_8h_html_a253f2a88e0263f686c9fe3aea44b61b2"><div class="ttname"><a href="comunicazione_8h.html#a253f2a88e0263f686c9fe3aea44b61b2">stampa_menu_programmi</a></div><div class="ttdeci">void stampa_menu_programmi()</div><div class="ttdoc">Funzione booleana di stampa del menu di Gestione programmi.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:25</div></div>
+<div class="ttc" id="acomunicazione_8h_html_a39efc26a590d42d81716988ccd0a4aaf"><div class="ttname"><a href="comunicazione_8h.html#a39efc26a590d42d81716988ccd0a4aaf">acquisisci_stringa</a></div><div class="ttdeci">void acquisisci_stringa(char *testo, char *input, int lunghezza_massima)</div><div class="ttdoc">Funzione booleana di acquisizione di una stringa in input.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:178</div></div>
+<div class="ttc" id="acomunicazione_8h_html_a507fdf36911fecc86fa91262f62f9a58"><div class="ttname"><a href="comunicazione_8h.html#a507fdf36911fecc86fa91262f62f9a58">stampa_generi</a></div><div class="ttdeci">void stampa_generi()</div><div class="ttdoc">Funzione booleana di stampa dell'elenco generi di programmi televisivi.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:51</div></div>
+<div class="ttc" id="acomunicazione_8h_html_a5273586695bd4f9cb926fd60d46a61e0"><div class="ttname"><a href="comunicazione_8h.html#a5273586695bd4f9cb926fd60d46a61e0">stampa_utente</a></div><div class="ttdeci">void stampa_utente(const utente_t *utente)</div><div class="ttdoc">Funzione booleana di stampa dei dati dell'utente.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:115</div></div>
+<div class="ttc" id="acomunicazione_8h_html_a66a17fe9695271a13af45c78845e5373"><div class="ttname"><a href="comunicazione_8h.html#a66a17fe9695271a13af45c78845e5373">stampa_menu_modifica_utente</a></div><div class="ttdeci">void stampa_menu_modifica_utente()</div><div class="ttdoc">Funzione booleana di stampa del menu di Modifica utente.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:99</div></div>
+<div class="ttc" id="acomunicazione_8h_html_a6953221fed288bd23e00d929c13c3580"><div class="ttname"><a href="comunicazione_8h.html#a6953221fed288bd23e00d929c13c3580">stampa_menu_modifica_programma</a></div><div class="ttdeci">void stampa_menu_modifica_programma()</div><div class="ttdoc">Funzione booleana di stampa del menu di Modifica programma televisivo.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:89</div></div>
+<div class="ttc" id="acomunicazione_8h_html_a6f41dc64d28912d4342bd93bc4c034aa"><div class="ttname"><a href="comunicazione_8h.html#a6f41dc64d28912d4342bd93bc4c034aa">acquisisci_numero_con_condizione_di_uscita</a></div><div class="ttdeci">void acquisisci_numero_con_condizione_di_uscita(char *testo, int *input, int numero_minimo, int numero_massimo)</div><div class="ttdoc">Funzione booleana di acquisizione di un numero in input, con condizione di uscita.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:136</div></div>
+<div class="ttc" id="acomunicazione_8h_html_a80a5f92b9085edf2858311b84945f7b4"><div class="ttname"><a href="comunicazione_8h.html#a80a5f92b9085edf2858311b84945f7b4">stampa_elenco_programmi</a></div><div class="ttdeci">void stampa_elenco_programmi(lista_programmi_t lista_programmi)</div><div class="ttdoc">Funzione booleana di stampa di un elenco di programmi televisivi.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:76</div></div>
+<div class="ttc" id="acomunicazione_8h_html_a8bddd867033d374bf521a44a8319bf1d"><div class="ttname"><a href="comunicazione_8h.html#a8bddd867033d374bf521a44a8319bf1d">acquisisci_numero</a></div><div class="ttdeci">void acquisisci_numero(char *testo, int *input, int numero_minimo, int numero_massimo)</div><div class="ttdoc">Funzione booleana di acquisizione di un numero in input.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:157</div></div>
+<div class="ttc" id="acomunicazione_8h_html_a9877001858f655a9acfd71e2a5ce8cab"><div class="ttname"><a href="comunicazione_8h.html#a9877001858f655a9acfd71e2a5ce8cab">stampa_menu_utente</a></div><div class="ttdeci">void stampa_menu_utente()</div><div class="ttdoc">Funzione booleana di stampa del menu di Gestione utente.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:34</div></div>
+<div class="ttc" id="acomunicazione_8h_html_ab89b1dcbe352f52dfb77f5cb0e5edd08"><div class="ttname"><a href="comunicazione_8h.html#ab89b1dcbe352f52dfb77f5cb0e5edd08">stampa_programma</a></div><div class="ttdeci">void stampa_programma(const programma_t *programma)</div><div class="ttdoc">Funzione booleana di stampa di un programma televisivo.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:66</div></div>
+<div class="ttc" id="acomunicazione_8h_html_ac2a15db718c62fed0d0d03d67e19749e"><div class="ttname"><a href="comunicazione_8h.html#ac2a15db718c62fed0d0d03d67e19749e">ripeti_operazione</a></div><div class="ttdeci">unsigned short int ripeti_operazione(char *testo)</div><div class="ttdoc">Funzione booleana che richiede all'utente se ripetere l'operazione.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:206</div></div>
+<div class="ttc" id="acomunicazione_8h_html_ad7eb7f2d6e6b2a65ce7a2ed31eed78c7"><div class="ttname"><a href="comunicazione_8h.html#ad7eb7f2d6e6b2a65ce7a2ed31eed78c7">stampa_tipologie</a></div><div class="ttdeci">void stampa_tipologie()</div><div class="ttdoc">Funzione booleana di stampa dell'elenco tipologie di programmi televisivi.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:41</div></div>
+<div class="ttc" id="acomunicazione_8h_html_ae143eaef835adb02825be356ad76a226"><div class="ttname"><a href="comunicazione_8h.html#ae143eaef835adb02825be356ad76a226">stampa_programma_suggerito</a></div><div class="ttdeci">void stampa_programma_suggerito(const suggerimento_t *suggerimento)</div><div class="ttdoc">Funzione booleana di stampa di un programma suggerito.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:109</div></div>
+<div class="ttc" id="acomunicazione_8h_html_af19db39fb5a1043df53d111553f1d1d3"><div class="ttname"><a href="comunicazione_8h.html#af19db39fb5a1043df53d111553f1d1d3">stampa_menu_principale</a></div><div class="ttdeci">void stampa_menu_principale()</div><div class="ttdoc">Funzione booleana di stampa del menu principale.</div><div class="ttdef"><b>Definition:</b> comunicazione.c:14</div></div>
+<div class="ttc" id="adefinizioni_8h_html"><div class="ttname"><a href="definizioni_8h.html">definizioni.h</a></div><div class="ttdoc">File contenente la definizione di tutte le definizioni utili per una corretta implementazione del sof...</div></div>
+<div class="ttc" id="astructlista__programmi__t_html"><div class="ttname"><a href="structlista__programmi__t.html">lista_programmi_t</a></div><div class="ttdoc">Questa struttura dati rappresenta una lista di programmi ed il numero di elementi di cui è composta.</div><div class="ttdef"><b>Definition:</b> definizioni.h:218</div></div>
+<div class="ttc" id="astructprogramma__t_html"><div class="ttname"><a href="structprogramma__t.html">programma_t</a></div><div class="ttdoc">Questa struttura dati rappresenta il programma televisivo presente sulla Smart TV.</div><div class="ttdef"><b>Definition:</b> definizioni.h:190</div></div>
+<div class="ttc" id="astructsuggerimento__t_html"><div class="ttname"><a href="structsuggerimento__t.html">suggerimento_t</a></div><div class="ttdoc">Questa struttura dati rappresenta il programma che può suggerito per l'utente.</div><div class="ttdef"><b>Definition:</b> definizioni.h:231</div></div>
+<div class="ttc" id="astructutente__t_html"><div class="ttname"><a href="structutente__t.html">utente_t</a></div><div class="ttdoc">Questa struttura dati rappresenta l'utente unico utilizzatore della Smart TV.</div><div class="ttdef"><b>Definition:</b> definizioni.h:172</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

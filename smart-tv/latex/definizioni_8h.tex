@@ -1,0 +1,380 @@
+\hypertarget{definizioni_8h}{}\doxysection{Riferimenti per il file src/definizioni.h}
+\label{definizioni_8h}\index{src/definizioni.h@{src/definizioni.h}}
+
+
+File contenente la definizione di tutte le definizioni utili per una corretta implementazione del software.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structutente__t}{utente\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Questa struttura dati rappresenta l\textquotesingle{}utente unico utilizzatore della Smart TV. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Questa struttura dati rappresenta il programma televisivo presente sulla Smart TV. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structlista__programmi__t}{lista\+\_\+programmi\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Questa struttura dati rappresenta una lista di programmi ed il numero di elementi di cui è composta. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structsuggerimento__t}{suggerimento\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Questa struttura dati rappresenta il programma che può suggerito per l\textquotesingle{}utente. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structlista__programmi__suggeriti__t}{lista\+\_\+programmi\+\_\+suggeriti\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Questa struttura dati rappresenta una lista di programmi suggeriti ed il numero di elementi di cui è composta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a1846f8f3c49d6e0357985a6f76c72cc9}{VALUTAZIONE\+\_\+\+MINIMA}}~1
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a1bc955650ab59abad116b64e02b82c5a}{VALUTAZIONE\+\_\+\+MASSIMA}}~5
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a58d9f27f7a98d8aa7b6ef859570cfdc8}{RISPOSTA\+\_\+\+MIN\+\_\+\+MENU}}~1
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a28c430660b894786d99133f4fe4d7cb7}{RISPOSTA\+\_\+\+MAX\+\_\+\+MENU\+\_\+\+PRINCIPALE}}~6
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_ad37fb663249650d06b87b12f1af507b7}{RISPOSTA\+\_\+\+MAX\+\_\+\+MENU\+\_\+\+PROGRAMMI}}~4
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a1c6d04d962b80b5258179a14f1fa94ea}{RISPOSTA\+\_\+\+MAX\+\_\+\+MENU\+\_\+\+UTENTI}}~2
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a07d5ff650b26330ea8ef70e47f67e77c}{RISPOSTA\+\_\+\+MAX\+\_\+\+MENU\+\_\+\+SUGGERIMENTI}}~2
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a220dcfe479c72ea5b7e36d098bd0d990}{RISPOSTA\+\_\+\+MAX\+\_\+\+MENU\+\_\+\+MODIFICA\+\_\+\+PROGRAMMI}}~4
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_af5500a494798dcbc4fb5155a7b533422}{RISPOSTA\+\_\+\+MAX\+\_\+\+MENU\+\_\+\+MODIFICA\+\_\+\+UTENTI}}~4
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_ab08b28fcc8d187232ed530aa0b029af2}{NUMERO\+\_\+\+MIN\+\_\+\+CODICE\+\_\+\+PROGRAMMA}}~1
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_ad15e091b22af29525b56071ad2aba3ac}{NUMERO\+\_\+\+MAX\+\_\+\+CODICE\+\_\+\+PROGRAMMA}}~999
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_aa3036e28dae9646f418b359f933c8860}{LUNGHEZZA\+\_\+\+MAX\+\_\+\+TITOLO\+\_\+\+PROGRAMMA}}~31
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_ae33649df1408656c0e1cf230e94630a8}{LUNGHEZZA\+\_\+\+MAX\+\_\+\+DESCRIZIONE\+\_\+\+PROGRAMMA}}~51
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_ace757b2ef816d55d9d68508f3df0115e}{LUNGHEZZA\+\_\+\+MAX\+\_\+\+NOME\+\_\+\+UTENTE}}~21
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_ae618401ebf30ee4494922d6a5b9f5f05}{LUNGHEZZA\+\_\+\+MAX\+\_\+\+COGNOME\+\_\+\+UTENTE}}~21
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a05e7ca0c741888427620fc9c0823095b}{NUMERO\+\_\+\+MAX\+\_\+\+TIPOLOGIE\+\_\+\+PREFERITE\+\_\+\+UTENTE}}~3
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a6dddbb3e14c1dbf8894196f551e2e2f2}{NUMERO\+\_\+\+MAX\+\_\+\+GENERI\+\_\+\+PREFERITI\+\_\+\+UTENTE}}~5
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a324172863a88a910c1bcb5e2dcaf95bd}{NUMERO\+\_\+\+MAX\+\_\+\+PROGRAMMI\+\_\+\+SUGGERITI}}~10
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a0b3bd0ebd10c67a858d4c1e32cff0960}{NUMERO\+\_\+\+TIPOLOGIE\+\_\+\+PROGRAMMA}}~6
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a6987b48890a18ad5733ba7ad1f8fd2b0}{NUMERO\+\_\+\+GENERI\+\_\+\+PROGRAMMA}}~11
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_aeac3a10fd629cec68cc90a649e30a7cd}{PUNTEGGIO\+\_\+\+TIPOLOGIA}}~1
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_ab905b58bec6f607986ca3cf8ca24e455}{PUNTEGGIO\+\_\+\+GENERE}}~1
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a794d0a63d238905212b6fc34fee99169}{PUNTEGGIO\+\_\+\+VALUTAZIONE\+\_\+5}}~2
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_af9d829a9676a0ca4fe8642ba1558abc4}{PUNTEGGIO\+\_\+\+VALUTAZIONE\+\_\+4}}~1
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_ae21e6accb291686f918f114b28bb53e0}{PUNTEGGIO\+\_\+\+VALUTAZIONE\+\_\+3}}~0
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a1e26c998d04fd798be1614a44be8fac7}{PUNTEGGIO\+\_\+\+VALUTAZIONE\+\_\+2}}~-\/1
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a77d04f5113d1e8dbc19a00afdeba9562}{PUNTEGGIO\+\_\+\+VALUTAZIONE\+\_\+1}}~-\/2
+\item 
+\#define \mbox{\hyperlink{definizioni_8h_a531abb39b3faaa9d12312a3fdf66a02a}{PUNTEGGIO\+\_\+\+VALUTAZIONE\+\_\+0}}~0
+\end{DoxyCompactItemize}
+\doxysubsection*{Tipi enumerati (enum)}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3}{tipologia\+\_\+e}} \{ \newline
+\mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3ae6a96f2b64338857387a0a809bff471b}{SERIE}} = 1
+, \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3aed6a294d036e467ef19147b033d466c4}{DOCUMENTARI}}
+, \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3a52ba815184f05f286836542ab991d550}{FILM}}
+, \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3a4642b63223cfda2e47a7c3bb797d777c}{INTRATTENIMENTO}}
+, \newline
+\mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3a8fef09365ab9669f970c115a9afa2cc7}{BAMBINI}}
+, \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3a9f5c34156f3ed9d7e92abf57a9fd76ba}{INFORMAZIONE}}
+ \}
+\item 
+enum \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36}{genere\+\_\+e}} \{ \newline
+\mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36a9accf37bd56d5685eaadf77d9c08c5d4}{FANTASCIENZA}} = 1
+, \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36a9bbe5f97556dac6f4a1d5fdf9c68ee2a}{CUCINA}}
+, \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36a7855025f93ec61483a6d738e930ee1a0}{NATURA}}
+, \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36a956b9eef94661d496f43e5e155353408}{SPORT}}
+, \newline
+\mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab22a16658e739af3ff474f4294f34047}{STORICO}}
+, \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36aec124b1bffa2283e22244c7948eb649c}{HORROR}}
+, \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab1f2d02c9f945c02cfcd1954af5c6c93}{ATTUALITA}}
+, \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab4109932e2d18eb887f31bc4e542f92a}{COMICO}}
+, \newline
+\mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36a5781c8f452ef921d8f106a501e93d5ba}{DRAMMATICO}}
+, \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36a3395c05c9ddf5f016e711ac2a2baee86}{FANTASY}}
+, \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab29f6edc9ad0ffe3ab1f062395d1a15f}{ROMANTICO}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+File contenente la definizione di tutte le definizioni utili per una corretta implementazione del software. 
+
+Strutture dati (struct), enumerazioni (enum) e costanti (define)
+
+\begin{DoxyAuthor}{Autore}
+Alessandro Marra 
+
+Vito Natale 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle definizioni}
+\mbox{\Hypertarget{definizioni_8h_ae618401ebf30ee4494922d6a5b9f5f05}\label{definizioni_8h_ae618401ebf30ee4494922d6a5b9f5f05}} 
+\index{definizioni.h@{definizioni.h}!LUNGHEZZA\_MAX\_COGNOME\_UTENTE@{LUNGHEZZA\_MAX\_COGNOME\_UTENTE}}
+\index{LUNGHEZZA\_MAX\_COGNOME\_UTENTE@{LUNGHEZZA\_MAX\_COGNOME\_UTENTE}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{LUNGHEZZA\_MAX\_COGNOME\_UTENTE}{LUNGHEZZA\_MAX\_COGNOME\_UTENTE}}
+{\footnotesize\ttfamily \#define LUNGHEZZA\+\_\+\+MAX\+\_\+\+COGNOME\+\_\+\+UTENTE~21}
+
+Lunghezza massima del cognome dell\textquotesingle{}utente utilizzatore della Smart TV \mbox{\Hypertarget{definizioni_8h_ae33649df1408656c0e1cf230e94630a8}\label{definizioni_8h_ae33649df1408656c0e1cf230e94630a8}} 
+\index{definizioni.h@{definizioni.h}!LUNGHEZZA\_MAX\_DESCRIZIONE\_PROGRAMMA@{LUNGHEZZA\_MAX\_DESCRIZIONE\_PROGRAMMA}}
+\index{LUNGHEZZA\_MAX\_DESCRIZIONE\_PROGRAMMA@{LUNGHEZZA\_MAX\_DESCRIZIONE\_PROGRAMMA}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{LUNGHEZZA\_MAX\_DESCRIZIONE\_PROGRAMMA}{LUNGHEZZA\_MAX\_DESCRIZIONE\_PROGRAMMA}}
+{\footnotesize\ttfamily \#define LUNGHEZZA\+\_\+\+MAX\+\_\+\+DESCRIZIONE\+\_\+\+PROGRAMMA~51}
+
+Lunghezza massima della descrizione del programma televisivo \mbox{\Hypertarget{definizioni_8h_ace757b2ef816d55d9d68508f3df0115e}\label{definizioni_8h_ace757b2ef816d55d9d68508f3df0115e}} 
+\index{definizioni.h@{definizioni.h}!LUNGHEZZA\_MAX\_NOME\_UTENTE@{LUNGHEZZA\_MAX\_NOME\_UTENTE}}
+\index{LUNGHEZZA\_MAX\_NOME\_UTENTE@{LUNGHEZZA\_MAX\_NOME\_UTENTE}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{LUNGHEZZA\_MAX\_NOME\_UTENTE}{LUNGHEZZA\_MAX\_NOME\_UTENTE}}
+{\footnotesize\ttfamily \#define LUNGHEZZA\+\_\+\+MAX\+\_\+\+NOME\+\_\+\+UTENTE~21}
+
+Lunghezza massima del nome dell\textquotesingle{}utente utilizzatore della Smart TV \mbox{\Hypertarget{definizioni_8h_aa3036e28dae9646f418b359f933c8860}\label{definizioni_8h_aa3036e28dae9646f418b359f933c8860}} 
+\index{definizioni.h@{definizioni.h}!LUNGHEZZA\_MAX\_TITOLO\_PROGRAMMA@{LUNGHEZZA\_MAX\_TITOLO\_PROGRAMMA}}
+\index{LUNGHEZZA\_MAX\_TITOLO\_PROGRAMMA@{LUNGHEZZA\_MAX\_TITOLO\_PROGRAMMA}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{LUNGHEZZA\_MAX\_TITOLO\_PROGRAMMA}{LUNGHEZZA\_MAX\_TITOLO\_PROGRAMMA}}
+{\footnotesize\ttfamily \#define LUNGHEZZA\+\_\+\+MAX\+\_\+\+TITOLO\+\_\+\+PROGRAMMA~31}
+
+Lunghezza massima del titolo del programma televisivo \mbox{\Hypertarget{definizioni_8h_a6987b48890a18ad5733ba7ad1f8fd2b0}\label{definizioni_8h_a6987b48890a18ad5733ba7ad1f8fd2b0}} 
+\index{definizioni.h@{definizioni.h}!NUMERO\_GENERI\_PROGRAMMA@{NUMERO\_GENERI\_PROGRAMMA}}
+\index{NUMERO\_GENERI\_PROGRAMMA@{NUMERO\_GENERI\_PROGRAMMA}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{NUMERO\_GENERI\_PROGRAMMA}{NUMERO\_GENERI\_PROGRAMMA}}
+{\footnotesize\ttfamily \#define NUMERO\+\_\+\+GENERI\+\_\+\+PROGRAMMA~11}
+
+Numero totale dei generi di programmi televisivi presenti nel sistema \mbox{\Hypertarget{definizioni_8h_ad15e091b22af29525b56071ad2aba3ac}\label{definizioni_8h_ad15e091b22af29525b56071ad2aba3ac}} 
+\index{definizioni.h@{definizioni.h}!NUMERO\_MAX\_CODICE\_PROGRAMMA@{NUMERO\_MAX\_CODICE\_PROGRAMMA}}
+\index{NUMERO\_MAX\_CODICE\_PROGRAMMA@{NUMERO\_MAX\_CODICE\_PROGRAMMA}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{NUMERO\_MAX\_CODICE\_PROGRAMMA}{NUMERO\_MAX\_CODICE\_PROGRAMMA}}
+{\footnotesize\ttfamily \#define NUMERO\+\_\+\+MAX\+\_\+\+CODICE\+\_\+\+PROGRAMMA~999}
+
+Numero massimo che può assumere il codice identificativo univoco del programma televisivo \mbox{\Hypertarget{definizioni_8h_a6dddbb3e14c1dbf8894196f551e2e2f2}\label{definizioni_8h_a6dddbb3e14c1dbf8894196f551e2e2f2}} 
+\index{definizioni.h@{definizioni.h}!NUMERO\_MAX\_GENERI\_PREFERITI\_UTENTE@{NUMERO\_MAX\_GENERI\_PREFERITI\_UTENTE}}
+\index{NUMERO\_MAX\_GENERI\_PREFERITI\_UTENTE@{NUMERO\_MAX\_GENERI\_PREFERITI\_UTENTE}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{NUMERO\_MAX\_GENERI\_PREFERITI\_UTENTE}{NUMERO\_MAX\_GENERI\_PREFERITI\_UTENTE}}
+{\footnotesize\ttfamily \#define NUMERO\+\_\+\+MAX\+\_\+\+GENERI\+\_\+\+PREFERITI\+\_\+\+UTENTE~5}
+
+Numero massimo di generi (di programmi televisivi) preferiti che l\textquotesingle{}utente può salvare nel proprio profilo \mbox{\Hypertarget{definizioni_8h_a324172863a88a910c1bcb5e2dcaf95bd}\label{definizioni_8h_a324172863a88a910c1bcb5e2dcaf95bd}} 
+\index{definizioni.h@{definizioni.h}!NUMERO\_MAX\_PROGRAMMI\_SUGGERITI@{NUMERO\_MAX\_PROGRAMMI\_SUGGERITI}}
+\index{NUMERO\_MAX\_PROGRAMMI\_SUGGERITI@{NUMERO\_MAX\_PROGRAMMI\_SUGGERITI}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{NUMERO\_MAX\_PROGRAMMI\_SUGGERITI}{NUMERO\_MAX\_PROGRAMMI\_SUGGERITI}}
+{\footnotesize\ttfamily \#define NUMERO\+\_\+\+MAX\+\_\+\+PROGRAMMI\+\_\+\+SUGGERITI~10}
+
+Numero massimo di programmi che vengono suggeriti dalla funzione suggerisci all\textquotesingle{}utente \mbox{\Hypertarget{definizioni_8h_a05e7ca0c741888427620fc9c0823095b}\label{definizioni_8h_a05e7ca0c741888427620fc9c0823095b}} 
+\index{definizioni.h@{definizioni.h}!NUMERO\_MAX\_TIPOLOGIE\_PREFERITE\_UTENTE@{NUMERO\_MAX\_TIPOLOGIE\_PREFERITE\_UTENTE}}
+\index{NUMERO\_MAX\_TIPOLOGIE\_PREFERITE\_UTENTE@{NUMERO\_MAX\_TIPOLOGIE\_PREFERITE\_UTENTE}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{NUMERO\_MAX\_TIPOLOGIE\_PREFERITE\_UTENTE}{NUMERO\_MAX\_TIPOLOGIE\_PREFERITE\_UTENTE}}
+{\footnotesize\ttfamily \#define NUMERO\+\_\+\+MAX\+\_\+\+TIPOLOGIE\+\_\+\+PREFERITE\+\_\+\+UTENTE~3}
+
+Numero massimo di tipologie (di programmi televisivi) preferite che l\textquotesingle{}utente può salvare nel proprio profilo \mbox{\Hypertarget{definizioni_8h_ab08b28fcc8d187232ed530aa0b029af2}\label{definizioni_8h_ab08b28fcc8d187232ed530aa0b029af2}} 
+\index{definizioni.h@{definizioni.h}!NUMERO\_MIN\_CODICE\_PROGRAMMA@{NUMERO\_MIN\_CODICE\_PROGRAMMA}}
+\index{NUMERO\_MIN\_CODICE\_PROGRAMMA@{NUMERO\_MIN\_CODICE\_PROGRAMMA}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{NUMERO\_MIN\_CODICE\_PROGRAMMA}{NUMERO\_MIN\_CODICE\_PROGRAMMA}}
+{\footnotesize\ttfamily \#define NUMERO\+\_\+\+MIN\+\_\+\+CODICE\+\_\+\+PROGRAMMA~1}
+
+Numero minimo che può assumere il codice identificativo univoco del programma televisivo \mbox{\Hypertarget{definizioni_8h_a0b3bd0ebd10c67a858d4c1e32cff0960}\label{definizioni_8h_a0b3bd0ebd10c67a858d4c1e32cff0960}} 
+\index{definizioni.h@{definizioni.h}!NUMERO\_TIPOLOGIE\_PROGRAMMA@{NUMERO\_TIPOLOGIE\_PROGRAMMA}}
+\index{NUMERO\_TIPOLOGIE\_PROGRAMMA@{NUMERO\_TIPOLOGIE\_PROGRAMMA}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{NUMERO\_TIPOLOGIE\_PROGRAMMA}{NUMERO\_TIPOLOGIE\_PROGRAMMA}}
+{\footnotesize\ttfamily \#define NUMERO\+\_\+\+TIPOLOGIE\+\_\+\+PROGRAMMA~6}
+
+Numero totale delle tipologie di programmi televisivi presenti nel sistema \mbox{\Hypertarget{definizioni_8h_ab905b58bec6f607986ca3cf8ca24e455}\label{definizioni_8h_ab905b58bec6f607986ca3cf8ca24e455}} 
+\index{definizioni.h@{definizioni.h}!PUNTEGGIO\_GENERE@{PUNTEGGIO\_GENERE}}
+\index{PUNTEGGIO\_GENERE@{PUNTEGGIO\_GENERE}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{PUNTEGGIO\_GENERE}{PUNTEGGIO\_GENERE}}
+{\footnotesize\ttfamily \#define PUNTEGGIO\+\_\+\+GENERE~1}
+
+Valore da assegnare al programma se il genere del programma rientra tra i generi preferiti dell’utente \mbox{\Hypertarget{definizioni_8h_aeac3a10fd629cec68cc90a649e30a7cd}\label{definizioni_8h_aeac3a10fd629cec68cc90a649e30a7cd}} 
+\index{definizioni.h@{definizioni.h}!PUNTEGGIO\_TIPOLOGIA@{PUNTEGGIO\_TIPOLOGIA}}
+\index{PUNTEGGIO\_TIPOLOGIA@{PUNTEGGIO\_TIPOLOGIA}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{PUNTEGGIO\_TIPOLOGIA}{PUNTEGGIO\_TIPOLOGIA}}
+{\footnotesize\ttfamily \#define PUNTEGGIO\+\_\+\+TIPOLOGIA~1}
+
+Valore da assegnare al programma se la tipologia del programma rientra tra le tipologie preferite dell’utente \mbox{\Hypertarget{definizioni_8h_a531abb39b3faaa9d12312a3fdf66a02a}\label{definizioni_8h_a531abb39b3faaa9d12312a3fdf66a02a}} 
+\index{definizioni.h@{definizioni.h}!PUNTEGGIO\_VALUTAZIONE\_0@{PUNTEGGIO\_VALUTAZIONE\_0}}
+\index{PUNTEGGIO\_VALUTAZIONE\_0@{PUNTEGGIO\_VALUTAZIONE\_0}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{PUNTEGGIO\_VALUTAZIONE\_0}{PUNTEGGIO\_VALUTAZIONE\_0}}
+{\footnotesize\ttfamily \#define PUNTEGGIO\+\_\+\+VALUTAZIONE\+\_\+0~0}
+
+Valore da assegnare al programma se la valutazione del programma è 0 \mbox{\Hypertarget{definizioni_8h_a77d04f5113d1e8dbc19a00afdeba9562}\label{definizioni_8h_a77d04f5113d1e8dbc19a00afdeba9562}} 
+\index{definizioni.h@{definizioni.h}!PUNTEGGIO\_VALUTAZIONE\_1@{PUNTEGGIO\_VALUTAZIONE\_1}}
+\index{PUNTEGGIO\_VALUTAZIONE\_1@{PUNTEGGIO\_VALUTAZIONE\_1}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{PUNTEGGIO\_VALUTAZIONE\_1}{PUNTEGGIO\_VALUTAZIONE\_1}}
+{\footnotesize\ttfamily \#define PUNTEGGIO\+\_\+\+VALUTAZIONE\+\_\+1~-\/2}
+
+Valore da assegnare al programma se la valutazione del programma è 1 \mbox{\Hypertarget{definizioni_8h_a1e26c998d04fd798be1614a44be8fac7}\label{definizioni_8h_a1e26c998d04fd798be1614a44be8fac7}} 
+\index{definizioni.h@{definizioni.h}!PUNTEGGIO\_VALUTAZIONE\_2@{PUNTEGGIO\_VALUTAZIONE\_2}}
+\index{PUNTEGGIO\_VALUTAZIONE\_2@{PUNTEGGIO\_VALUTAZIONE\_2}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{PUNTEGGIO\_VALUTAZIONE\_2}{PUNTEGGIO\_VALUTAZIONE\_2}}
+{\footnotesize\ttfamily \#define PUNTEGGIO\+\_\+\+VALUTAZIONE\+\_\+2~-\/1}
+
+Valore da assegnare al programma se la valutazione del programma è 2 \mbox{\Hypertarget{definizioni_8h_ae21e6accb291686f918f114b28bb53e0}\label{definizioni_8h_ae21e6accb291686f918f114b28bb53e0}} 
+\index{definizioni.h@{definizioni.h}!PUNTEGGIO\_VALUTAZIONE\_3@{PUNTEGGIO\_VALUTAZIONE\_3}}
+\index{PUNTEGGIO\_VALUTAZIONE\_3@{PUNTEGGIO\_VALUTAZIONE\_3}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{PUNTEGGIO\_VALUTAZIONE\_3}{PUNTEGGIO\_VALUTAZIONE\_3}}
+{\footnotesize\ttfamily \#define PUNTEGGIO\+\_\+\+VALUTAZIONE\+\_\+3~0}
+
+Valore da assegnare al programma se la valutazione del programma è 3 \mbox{\Hypertarget{definizioni_8h_af9d829a9676a0ca4fe8642ba1558abc4}\label{definizioni_8h_af9d829a9676a0ca4fe8642ba1558abc4}} 
+\index{definizioni.h@{definizioni.h}!PUNTEGGIO\_VALUTAZIONE\_4@{PUNTEGGIO\_VALUTAZIONE\_4}}
+\index{PUNTEGGIO\_VALUTAZIONE\_4@{PUNTEGGIO\_VALUTAZIONE\_4}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{PUNTEGGIO\_VALUTAZIONE\_4}{PUNTEGGIO\_VALUTAZIONE\_4}}
+{\footnotesize\ttfamily \#define PUNTEGGIO\+\_\+\+VALUTAZIONE\+\_\+4~1}
+
+Valore da assegnare al programma se la valutazione del programma è 4 \mbox{\Hypertarget{definizioni_8h_a794d0a63d238905212b6fc34fee99169}\label{definizioni_8h_a794d0a63d238905212b6fc34fee99169}} 
+\index{definizioni.h@{definizioni.h}!PUNTEGGIO\_VALUTAZIONE\_5@{PUNTEGGIO\_VALUTAZIONE\_5}}
+\index{PUNTEGGIO\_VALUTAZIONE\_5@{PUNTEGGIO\_VALUTAZIONE\_5}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{PUNTEGGIO\_VALUTAZIONE\_5}{PUNTEGGIO\_VALUTAZIONE\_5}}
+{\footnotesize\ttfamily \#define PUNTEGGIO\+\_\+\+VALUTAZIONE\+\_\+5~2}
+
+Valore da assegnare al programma se la valutazione del programma è 5 \mbox{\Hypertarget{definizioni_8h_a220dcfe479c72ea5b7e36d098bd0d990}\label{definizioni_8h_a220dcfe479c72ea5b7e36d098bd0d990}} 
+\index{definizioni.h@{definizioni.h}!RISPOSTA\_MAX\_MENU\_MODIFICA\_PROGRAMMI@{RISPOSTA\_MAX\_MENU\_MODIFICA\_PROGRAMMI}}
+\index{RISPOSTA\_MAX\_MENU\_MODIFICA\_PROGRAMMI@{RISPOSTA\_MAX\_MENU\_MODIFICA\_PROGRAMMI}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{RISPOSTA\_MAX\_MENU\_MODIFICA\_PROGRAMMI}{RISPOSTA\_MAX\_MENU\_MODIFICA\_PROGRAMMI}}
+{\footnotesize\ttfamily \#define RISPOSTA\+\_\+\+MAX\+\_\+\+MENU\+\_\+\+MODIFICA\+\_\+\+PROGRAMMI~4}
+
+Risposta massima che può assumere il sottomenu di modifica dei programmi \mbox{\Hypertarget{definizioni_8h_af5500a494798dcbc4fb5155a7b533422}\label{definizioni_8h_af5500a494798dcbc4fb5155a7b533422}} 
+\index{definizioni.h@{definizioni.h}!RISPOSTA\_MAX\_MENU\_MODIFICA\_UTENTI@{RISPOSTA\_MAX\_MENU\_MODIFICA\_UTENTI}}
+\index{RISPOSTA\_MAX\_MENU\_MODIFICA\_UTENTI@{RISPOSTA\_MAX\_MENU\_MODIFICA\_UTENTI}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{RISPOSTA\_MAX\_MENU\_MODIFICA\_UTENTI}{RISPOSTA\_MAX\_MENU\_MODIFICA\_UTENTI}}
+{\footnotesize\ttfamily \#define RISPOSTA\+\_\+\+MAX\+\_\+\+MENU\+\_\+\+MODIFICA\+\_\+\+UTENTI~4}
+
+Risposta massima che può assumere il sottomenu di modifica dell\textquotesingle{}utente \mbox{\Hypertarget{definizioni_8h_a28c430660b894786d99133f4fe4d7cb7}\label{definizioni_8h_a28c430660b894786d99133f4fe4d7cb7}} 
+\index{definizioni.h@{definizioni.h}!RISPOSTA\_MAX\_MENU\_PRINCIPALE@{RISPOSTA\_MAX\_MENU\_PRINCIPALE}}
+\index{RISPOSTA\_MAX\_MENU\_PRINCIPALE@{RISPOSTA\_MAX\_MENU\_PRINCIPALE}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{RISPOSTA\_MAX\_MENU\_PRINCIPALE}{RISPOSTA\_MAX\_MENU\_PRINCIPALE}}
+{\footnotesize\ttfamily \#define RISPOSTA\+\_\+\+MAX\+\_\+\+MENU\+\_\+\+PRINCIPALE~6}
+
+Risposta massima che può assumere il menu principale \mbox{\Hypertarget{definizioni_8h_ad37fb663249650d06b87b12f1af507b7}\label{definizioni_8h_ad37fb663249650d06b87b12f1af507b7}} 
+\index{definizioni.h@{definizioni.h}!RISPOSTA\_MAX\_MENU\_PROGRAMMI@{RISPOSTA\_MAX\_MENU\_PROGRAMMI}}
+\index{RISPOSTA\_MAX\_MENU\_PROGRAMMI@{RISPOSTA\_MAX\_MENU\_PROGRAMMI}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{RISPOSTA\_MAX\_MENU\_PROGRAMMI}{RISPOSTA\_MAX\_MENU\_PROGRAMMI}}
+{\footnotesize\ttfamily \#define RISPOSTA\+\_\+\+MAX\+\_\+\+MENU\+\_\+\+PROGRAMMI~4}
+
+Risposta massima che può assumere il menu di gestione dei programmi \mbox{\Hypertarget{definizioni_8h_a07d5ff650b26330ea8ef70e47f67e77c}\label{definizioni_8h_a07d5ff650b26330ea8ef70e47f67e77c}} 
+\index{definizioni.h@{definizioni.h}!RISPOSTA\_MAX\_MENU\_SUGGERIMENTI@{RISPOSTA\_MAX\_MENU\_SUGGERIMENTI}}
+\index{RISPOSTA\_MAX\_MENU\_SUGGERIMENTI@{RISPOSTA\_MAX\_MENU\_SUGGERIMENTI}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{RISPOSTA\_MAX\_MENU\_SUGGERIMENTI}{RISPOSTA\_MAX\_MENU\_SUGGERIMENTI}}
+{\footnotesize\ttfamily \#define RISPOSTA\+\_\+\+MAX\+\_\+\+MENU\+\_\+\+SUGGERIMENTI~2}
+
+Risposta massima che può assumere il sottomenu di suggerimento dei programmi \mbox{\Hypertarget{definizioni_8h_a1c6d04d962b80b5258179a14f1fa94ea}\label{definizioni_8h_a1c6d04d962b80b5258179a14f1fa94ea}} 
+\index{definizioni.h@{definizioni.h}!RISPOSTA\_MAX\_MENU\_UTENTI@{RISPOSTA\_MAX\_MENU\_UTENTI}}
+\index{RISPOSTA\_MAX\_MENU\_UTENTI@{RISPOSTA\_MAX\_MENU\_UTENTI}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{RISPOSTA\_MAX\_MENU\_UTENTI}{RISPOSTA\_MAX\_MENU\_UTENTI}}
+{\footnotesize\ttfamily \#define RISPOSTA\+\_\+\+MAX\+\_\+\+MENU\+\_\+\+UTENTI~2}
+
+Risposta massima che può assumere il menu di gestione dell\textquotesingle{}utente \mbox{\Hypertarget{definizioni_8h_a58d9f27f7a98d8aa7b6ef859570cfdc8}\label{definizioni_8h_a58d9f27f7a98d8aa7b6ef859570cfdc8}} 
+\index{definizioni.h@{definizioni.h}!RISPOSTA\_MIN\_MENU@{RISPOSTA\_MIN\_MENU}}
+\index{RISPOSTA\_MIN\_MENU@{RISPOSTA\_MIN\_MENU}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{RISPOSTA\_MIN\_MENU}{RISPOSTA\_MIN\_MENU}}
+{\footnotesize\ttfamily \#define RISPOSTA\+\_\+\+MIN\+\_\+\+MENU~1}
+
+Risposta minima che può assumere qualsiasi menu \mbox{\Hypertarget{definizioni_8h_a1bc955650ab59abad116b64e02b82c5a}\label{definizioni_8h_a1bc955650ab59abad116b64e02b82c5a}} 
+\index{definizioni.h@{definizioni.h}!VALUTAZIONE\_MASSIMA@{VALUTAZIONE\_MASSIMA}}
+\index{VALUTAZIONE\_MASSIMA@{VALUTAZIONE\_MASSIMA}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{VALUTAZIONE\_MASSIMA}{VALUTAZIONE\_MASSIMA}}
+{\footnotesize\ttfamily \#define VALUTAZIONE\+\_\+\+MASSIMA~5}
+
+Valutazione massima applicabile ad un programma \mbox{\Hypertarget{definizioni_8h_a1846f8f3c49d6e0357985a6f76c72cc9}\label{definizioni_8h_a1846f8f3c49d6e0357985a6f76c72cc9}} 
+\index{definizioni.h@{definizioni.h}!VALUTAZIONE\_MINIMA@{VALUTAZIONE\_MINIMA}}
+\index{VALUTAZIONE\_MINIMA@{VALUTAZIONE\_MINIMA}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{VALUTAZIONE\_MINIMA}{VALUTAZIONE\_MINIMA}}
+{\footnotesize\ttfamily \#define VALUTAZIONE\+\_\+\+MINIMA~1}
+
+Valutazione minima applicabile ad un programma 
+
+\doxysubsection{Documentazione dei tipi enumerati}
+\mbox{\Hypertarget{definizioni_8h_a6d687920ee346c977d96de94804bfb36}\label{definizioni_8h_a6d687920ee346c977d96de94804bfb36}} 
+\index{definizioni.h@{definizioni.h}!genere\_e@{genere\_e}}
+\index{genere\_e@{genere\_e}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{genere\_e}{genere\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{definizioni_8h_a6d687920ee346c977d96de94804bfb36}{genere\+\_\+e}}}
+
+Elenco di tutti i possibili generi di un programma televisivo \begin{DoxyEnumFields}{Valori del tipo enumerato}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FANTASCIENZA@{FANTASCIENZA}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!FANTASCIENZA@{FANTASCIENZA}}}\mbox{\Hypertarget{definizioni_8h_a6d687920ee346c977d96de94804bfb36a9accf37bd56d5685eaadf77d9c08c5d4}\label{definizioni_8h_a6d687920ee346c977d96de94804bfb36a9accf37bd56d5685eaadf77d9c08c5d4}} 
+FANTASCIENZA&Fantascienza. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CUCINA@{CUCINA}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!CUCINA@{CUCINA}}}\mbox{\Hypertarget{definizioni_8h_a6d687920ee346c977d96de94804bfb36a9bbe5f97556dac6f4a1d5fdf9c68ee2a}\label{definizioni_8h_a6d687920ee346c977d96de94804bfb36a9bbe5f97556dac6f4a1d5fdf9c68ee2a}} 
+CUCINA&Cucina. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NATURA@{NATURA}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!NATURA@{NATURA}}}\mbox{\Hypertarget{definizioni_8h_a6d687920ee346c977d96de94804bfb36a7855025f93ec61483a6d738e930ee1a0}\label{definizioni_8h_a6d687920ee346c977d96de94804bfb36a7855025f93ec61483a6d738e930ee1a0}} 
+NATURA&Natura. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPORT@{SPORT}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!SPORT@{SPORT}}}\mbox{\Hypertarget{definizioni_8h_a6d687920ee346c977d96de94804bfb36a956b9eef94661d496f43e5e155353408}\label{definizioni_8h_a6d687920ee346c977d96de94804bfb36a956b9eef94661d496f43e5e155353408}} 
+SPORT&Sport. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STORICO@{STORICO}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!STORICO@{STORICO}}}\mbox{\Hypertarget{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab22a16658e739af3ff474f4294f34047}\label{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab22a16658e739af3ff474f4294f34047}} 
+STORICO&Storico. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HORROR@{HORROR}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!HORROR@{HORROR}}}\mbox{\Hypertarget{definizioni_8h_a6d687920ee346c977d96de94804bfb36aec124b1bffa2283e22244c7948eb649c}\label{definizioni_8h_a6d687920ee346c977d96de94804bfb36aec124b1bffa2283e22244c7948eb649c}} 
+HORROR&Horror. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ATTUALITA@{ATTUALITA}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!ATTUALITA@{ATTUALITA}}}\mbox{\Hypertarget{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab1f2d02c9f945c02cfcd1954af5c6c93}\label{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab1f2d02c9f945c02cfcd1954af5c6c93}} 
+ATTUALITA&Attualità \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMICO@{COMICO}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!COMICO@{COMICO}}}\mbox{\Hypertarget{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab4109932e2d18eb887f31bc4e542f92a}\label{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab4109932e2d18eb887f31bc4e542f92a}} 
+COMICO&Comico. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DRAMMATICO@{DRAMMATICO}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!DRAMMATICO@{DRAMMATICO}}}\mbox{\Hypertarget{definizioni_8h_a6d687920ee346c977d96de94804bfb36a5781c8f452ef921d8f106a501e93d5ba}\label{definizioni_8h_a6d687920ee346c977d96de94804bfb36a5781c8f452ef921d8f106a501e93d5ba}} 
+DRAMMATICO&Drammatico. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FANTASY@{FANTASY}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!FANTASY@{FANTASY}}}\mbox{\Hypertarget{definizioni_8h_a6d687920ee346c977d96de94804bfb36a3395c05c9ddf5f016e711ac2a2baee86}\label{definizioni_8h_a6d687920ee346c977d96de94804bfb36a3395c05c9ddf5f016e711ac2a2baee86}} 
+FANTASY&Fantasy. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ROMANTICO@{ROMANTICO}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!ROMANTICO@{ROMANTICO}}}\mbox{\Hypertarget{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab29f6edc9ad0ffe3ab1f062395d1a15f}\label{definizioni_8h_a6d687920ee346c977d96de94804bfb36ab29f6edc9ad0ffe3ab1f062395d1a15f}} 
+ROMANTICO&Romantico. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{definizioni_8h_ab9154babc016d316238941a26deac4c3}\label{definizioni_8h_ab9154babc016d316238941a26deac4c3}} 
+\index{definizioni.h@{definizioni.h}!tipologia\_e@{tipologia\_e}}
+\index{tipologia\_e@{tipologia\_e}!definizioni.h@{definizioni.h}}
+\doxysubsubsection{\texorpdfstring{tipologia\_e}{tipologia\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{definizioni_8h_ab9154babc016d316238941a26deac4c3}{tipologia\+\_\+e}}}
+
+Elenco di tutte le possibili tipologie di un programma televisivo \begin{DoxyEnumFields}{Valori del tipo enumerato}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SERIE@{SERIE}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!SERIE@{SERIE}}}\mbox{\Hypertarget{definizioni_8h_ab9154babc016d316238941a26deac4c3ae6a96f2b64338857387a0a809bff471b}\label{definizioni_8h_ab9154babc016d316238941a26deac4c3ae6a96f2b64338857387a0a809bff471b}} 
+SERIE&Serie. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOCUMENTARI@{DOCUMENTARI}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!DOCUMENTARI@{DOCUMENTARI}}}\mbox{\Hypertarget{definizioni_8h_ab9154babc016d316238941a26deac4c3aed6a294d036e467ef19147b033d466c4}\label{definizioni_8h_ab9154babc016d316238941a26deac4c3aed6a294d036e467ef19147b033d466c4}} 
+DOCUMENTARI&Documentari. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FILM@{FILM}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!FILM@{FILM}}}\mbox{\Hypertarget{definizioni_8h_ab9154babc016d316238941a26deac4c3a52ba815184f05f286836542ab991d550}\label{definizioni_8h_ab9154babc016d316238941a26deac4c3a52ba815184f05f286836542ab991d550}} 
+FILM&Film. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTRATTENIMENTO@{INTRATTENIMENTO}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!INTRATTENIMENTO@{INTRATTENIMENTO}}}\mbox{\Hypertarget{definizioni_8h_ab9154babc016d316238941a26deac4c3a4642b63223cfda2e47a7c3bb797d777c}\label{definizioni_8h_ab9154babc016d316238941a26deac4c3a4642b63223cfda2e47a7c3bb797d777c}} 
+INTRATTENIMENTO&Intrattenimento. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BAMBINI@{BAMBINI}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!BAMBINI@{BAMBINI}}}\mbox{\Hypertarget{definizioni_8h_ab9154babc016d316238941a26deac4c3a8fef09365ab9669f970c115a9afa2cc7}\label{definizioni_8h_ab9154babc016d316238941a26deac4c3a8fef09365ab9669f970c115a9afa2cc7}} 
+BAMBINI&Bambini. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INFORMAZIONE@{INFORMAZIONE}!definizioni.h@{definizioni.h}}\index{definizioni.h@{definizioni.h}!INFORMAZIONE@{INFORMAZIONE}}}\mbox{\Hypertarget{definizioni_8h_ab9154babc016d316238941a26deac4c3a9f5c34156f3ed9d7e92abf57a9fd76ba}\label{definizioni_8h_ab9154babc016d316238941a26deac4c3a9f5c34156f3ed9d7e92abf57a9fd76ba}} 
+INFORMAZIONE&Informazione. \\
+\hline
+
+\end{DoxyEnumFields}

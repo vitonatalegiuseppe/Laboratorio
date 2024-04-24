@@ -1,0 +1,121 @@
+\hypertarget{gestione_file_8h}{}\doxysection{Riferimenti per il file src/gestione\+File.h}
+\label{gestione_file_8h}\index{src/gestioneFile.h@{src/gestioneFile.h}}
+
+
+File contenente i metodi necessari a dialogare con i file.  
+
+
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{gestione_file_8h_a0521178dee53629d3d7f99cad679bb82}{leggi\+\_\+record}} (FILE $\ast$file, int $\ast$id, size\+\_\+t dimensione\+\_\+struct, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Metodo di lettura di un record da un file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gestione_file_8h_ad69523fbfe67ff288966ec8f756a7ff8}{scrivi\+\_\+record}} (FILE $\ast$file, int $\ast$id, size\+\_\+t dimensione\+\_\+struct, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Metodo di inserimento di un record ad un file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gestione_file_8h_a4be3486a3f68ea23faac1d1a810ba9fe}{visualizza\+\_\+utente}} (FILE $\ast$file\+\_\+utenti)
+\begin{DoxyCompactList}\small\item\em Metodo di visualizzaione del profilo utente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gestione_file_8h_a08568837b02cf763e1a20c937d608fd4}{modifica\+\_\+utente}} (FILE $\ast$file\+\_\+utenti)
+\begin{DoxyCompactList}\small\item\em Metodo di modifica del profilo utente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+File contenente i metodi necessari a dialogare con i file. 
+
+Metodi di apertura e chiusura Metodi di lettura, scrittura, aggiornamento, eliminazione record da file
+
+\begin{DoxyAuthor}{Autore}
+Alessandro Marra 
+
+Vito Natale 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{gestione_file_8h_a0521178dee53629d3d7f99cad679bb82}\label{gestione_file_8h_a0521178dee53629d3d7f99cad679bb82}} 
+\index{gestioneFile.h@{gestioneFile.h}!leggi\_record@{leggi\_record}}
+\index{leggi\_record@{leggi\_record}!gestioneFile.h@{gestioneFile.h}}
+\doxysubsubsection{\texorpdfstring{leggi\_record()}{leggi\_record()}}
+{\footnotesize\ttfamily void leggi\+\_\+record (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{int $\ast$}]{id,  }\item[{size\+\_\+t}]{dimensione\+\_\+struct,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Metodo di lettura di un record da un file. 
+
+Questa funzione serve a generalizzare l\textquotesingle{}operazione di lettura di un record dall\textquotesingle{}interno di un file Oltre al riferimento del file ({\ttfamily $\ast$file}) e al riferimento dell\textquotesingle{}oggetto ({\ttfamily $\ast$data}), vengono richiesti in input alcuni dati necessari per il corretto posizionamento all\textquotesingle{}interno del file
+\begin{DoxyItemize}
+\item l\textquotesingle{}identificativo univoco intero dell\textquotesingle{}oggetto da scrivere ({\ttfamily $\ast$id})
+\item la dimensione della struttura dati ({\ttfamily dimensione\+\_\+struct})
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file} & Puntatore del file \\
+\hline
+{\em $\ast$id} & Identificativo univoco intero dell\textquotesingle{}oggetto \\
+\hline
+{\em dimensione\+\_\+struct} & Dimensione della struttura dati \\
+\hline
+{\em $\ast$data} & Puntatore all\textquotesingle{}oggetto da scrivere all\textquotesingle{}interno del file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gestione_file_8h_a08568837b02cf763e1a20c937d608fd4}\label{gestione_file_8h_a08568837b02cf763e1a20c937d608fd4}} 
+\index{gestioneFile.h@{gestioneFile.h}!modifica\_utente@{modifica\_utente}}
+\index{modifica\_utente@{modifica\_utente}!gestioneFile.h@{gestioneFile.h}}
+\doxysubsubsection{\texorpdfstring{modifica\_utente()}{modifica\_utente()}}
+{\footnotesize\ttfamily void modifica\+\_\+utente (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file\+\_\+utenti }\end{DoxyParamCaption})}
+
+
+
+Metodo di modifica del profilo utente. 
+
+La funzione propone un sottomenu dedicato (\mbox{\hyperlink{comunicazione_8h_a66a17fe9695271a13af45c78845e5373}{stampa\+\_\+menu\+\_\+modifica\+\_\+utente}}) che consente all\textquotesingle{}utente di modificare uno dei campi del profilo utente Il profilo utente modificato viene aggiornato all\textquotesingle{}interno del {\ttfamily $\ast$file\+\_\+utenti} 
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file\+\_\+utenti} & Puntatore al file degli utenti \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gestione_file_8h_ad69523fbfe67ff288966ec8f756a7ff8}\label{gestione_file_8h_ad69523fbfe67ff288966ec8f756a7ff8}} 
+\index{gestioneFile.h@{gestioneFile.h}!scrivi\_record@{scrivi\_record}}
+\index{scrivi\_record@{scrivi\_record}!gestioneFile.h@{gestioneFile.h}}
+\doxysubsubsection{\texorpdfstring{scrivi\_record()}{scrivi\_record()}}
+{\footnotesize\ttfamily void scrivi\+\_\+record (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{int $\ast$}]{id,  }\item[{size\+\_\+t}]{dimensione\+\_\+struct,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Metodo di inserimento di un record ad un file. 
+
+Questa funzione serve a generalizzare l\textquotesingle{}operazione di aggiunta di un record all\textquotesingle{}interno di un file Oltre al riferimento del file ({\ttfamily $\ast$file}) e al riferimento dell\textquotesingle{}oggetto ({\ttfamily $\ast$data}), vengono richiesti in input alcuni dati necessari per il corretto posizionamento all\textquotesingle{}interno del file
+\begin{DoxyItemize}
+\item l\textquotesingle{}identificativo univoco intero dell\textquotesingle{}oggetto da scrivere ({\ttfamily $\ast$id})
+\item la dimensione della struttura dati ({\ttfamily dimensione\+\_\+struct})
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file} & Puntatore del file \\
+\hline
+{\em $\ast$id} & Identificativo univoco intero dell\textquotesingle{}oggetto \\
+\hline
+{\em dimensione\+\_\+struct} & Dimensione della struttura dati \\
+\hline
+{\em $\ast$data} & Puntatore all\textquotesingle{}oggetto da scrivere all\textquotesingle{}interno del file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gestione_file_8h_a4be3486a3f68ea23faac1d1a810ba9fe}\label{gestione_file_8h_a4be3486a3f68ea23faac1d1a810ba9fe}} 
+\index{gestioneFile.h@{gestioneFile.h}!visualizza\_utente@{visualizza\_utente}}
+\index{visualizza\_utente@{visualizza\_utente}!gestioneFile.h@{gestioneFile.h}}
+\doxysubsubsection{\texorpdfstring{visualizza\_utente()}{visualizza\_utente()}}
+{\footnotesize\ttfamily void visualizza\+\_\+utente (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file\+\_\+utenti }\end{DoxyParamCaption})}
+
+
+
+Metodo di visualizzaione del profilo utente. 
+
+La funzione legge il profilo dell\textquotesingle{}utente dal file {\ttfamily file\+\_\+utenti} e presenta le informazioni tramite \mbox{\hyperlink{comunicazione_8h_a5273586695bd4f9cb926fd60d46a61e0}{stampa\+\_\+utente}}
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$file\+\_\+utenti} & Puntatore al file degli utenti \\
+\hline
+\end{DoxyParams}

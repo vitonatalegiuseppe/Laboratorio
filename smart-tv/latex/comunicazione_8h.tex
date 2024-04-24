@@ -1,0 +1,208 @@
+\hypertarget{comunicazione_8h}{}\doxysection{Riferimenti per il file src/comunicazione.h}
+\label{comunicazione_8h}\index{src/comunicazione.h@{src/comunicazione.h}}
+
+
+File contenente tutti i metodi di input / output delle informazioni.  
+
+
+{\ttfamily \#include \char`\"{}definizioni.\+h\char`\"{}}\newline
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{comunicazione_8h_af19db39fb5a1043df53d111553f1d1d3}\label{comunicazione_8h_af19db39fb5a1043df53d111553f1d1d3}} 
+void {\bfseries stampa\+\_\+menu\+\_\+principale} ()
+\begin{DoxyCompactList}\small\item\em Funzione booleana di stampa del menu principale. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{comunicazione_8h_a253f2a88e0263f686c9fe3aea44b61b2}\label{comunicazione_8h_a253f2a88e0263f686c9fe3aea44b61b2}} 
+void {\bfseries stampa\+\_\+menu\+\_\+programmi} ()
+\begin{DoxyCompactList}\small\item\em Funzione booleana di stampa del menu di Gestione programmi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{comunicazione_8h_a9877001858f655a9acfd71e2a5ce8cab}\label{comunicazione_8h_a9877001858f655a9acfd71e2a5ce8cab}} 
+void {\bfseries stampa\+\_\+menu\+\_\+utente} ()
+\begin{DoxyCompactList}\small\item\em Funzione booleana di stampa del menu di Gestione utente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{comunicazione_8h_a5273586695bd4f9cb926fd60d46a61e0}{stampa\+\_\+utente}} (const \mbox{\hyperlink{structutente__t}{utente\+\_\+t}} $\ast$utente)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di stampa dei dati dell\textquotesingle{}utente. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{comunicazione_8h_a6953221fed288bd23e00d929c13c3580}\label{comunicazione_8h_a6953221fed288bd23e00d929c13c3580}} 
+void {\bfseries stampa\+\_\+menu\+\_\+modifica\+\_\+programma} ()
+\begin{DoxyCompactList}\small\item\em Funzione booleana di stampa del menu di Modifica programma televisivo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{comunicazione_8h_a66a17fe9695271a13af45c78845e5373}\label{comunicazione_8h_a66a17fe9695271a13af45c78845e5373}} 
+void {\bfseries stampa\+\_\+menu\+\_\+modifica\+\_\+utente} ()
+\begin{DoxyCompactList}\small\item\em Funzione booleana di stampa del menu di Modifica utente. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{comunicazione_8h_ad7eb7f2d6e6b2a65ce7a2ed31eed78c7}\label{comunicazione_8h_ad7eb7f2d6e6b2a65ce7a2ed31eed78c7}} 
+void {\bfseries stampa\+\_\+tipologie} ()
+\begin{DoxyCompactList}\small\item\em Funzione booleana di stampa dell\textquotesingle{}elenco tipologie di programmi televisivi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{comunicazione_8h_a507fdf36911fecc86fa91262f62f9a58}\label{comunicazione_8h_a507fdf36911fecc86fa91262f62f9a58}} 
+void {\bfseries stampa\+\_\+generi} ()
+\begin{DoxyCompactList}\small\item\em Funzione booleana di stampa dell\textquotesingle{}elenco generi di programmi televisivi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{comunicazione_8h_ab89b1dcbe352f52dfb77f5cb0e5edd08}{stampa\+\_\+programma}} (const \mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} $\ast$programma)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di stampa di un programma televisivo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{comunicazione_8h_a80a5f92b9085edf2858311b84945f7b4}{stampa\+\_\+elenco\+\_\+programmi}} (\mbox{\hyperlink{structlista__programmi__t}{lista\+\_\+programmi\+\_\+t}} lista\+\_\+programmi)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di stampa di un elenco di programmi televisivi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{comunicazione_8h_ae143eaef835adb02825be356ad76a226}{stampa\+\_\+programma\+\_\+suggerito}} (const \mbox{\hyperlink{structsuggerimento__t}{suggerimento\+\_\+t}} $\ast$suggerimento)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di stampa di un programma suggerito. \end{DoxyCompactList}\item 
+unsigned short int \mbox{\hyperlink{comunicazione_8h_ac2a15db718c62fed0d0d03d67e19749e}{ripeti\+\_\+operazione}} (char $\ast$testo)
+\begin{DoxyCompactList}\small\item\em Funzione booleana che richiede all\textquotesingle{}utente se ripetere l\textquotesingle{}operazione. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{comunicazione_8h_a39efc26a590d42d81716988ccd0a4aaf}{acquisisci\+\_\+stringa}} (char $\ast$testo, char $\ast$input, int lunghezza\+\_\+massima)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di acquisizione di una stringa in input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{comunicazione_8h_a8bddd867033d374bf521a44a8319bf1d}{acquisisci\+\_\+numero}} (char $\ast$testo, int $\ast$input, int numero\+\_\+minimo, int numero\+\_\+massimo)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di acquisizione di un numero in input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{comunicazione_8h_a6f41dc64d28912d4342bd93bc4c034aa}{acquisisci\+\_\+numero\+\_\+con\+\_\+condizione\+\_\+di\+\_\+uscita}} (char $\ast$testo, int $\ast$input, int numero\+\_\+minimo, int numero\+\_\+massimo)
+\begin{DoxyCompactList}\small\item\em Funzione booleana di acquisizione di un numero in input, con condizione di uscita. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+File contenente tutti i metodi di input / output delle informazioni. 
+
+In questo file sono presenti le stampe di tutti i menu e delle strutture dati (output) Sono inoltre presenti i metodi di acquisizione degli input con programmazione difensiva (input)
+
+\begin{DoxyAuthor}{Autore}
+Alessandro Marra 
+
+Vito Natale 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{comunicazione_8h_a8bddd867033d374bf521a44a8319bf1d}\label{comunicazione_8h_a8bddd867033d374bf521a44a8319bf1d}} 
+\index{comunicazione.h@{comunicazione.h}!acquisisci\_numero@{acquisisci\_numero}}
+\index{acquisisci\_numero@{acquisisci\_numero}!comunicazione.h@{comunicazione.h}}
+\doxysubsubsection{\texorpdfstring{acquisisci\_numero()}{acquisisci\_numero()}}
+{\footnotesize\ttfamily void acquisisci\+\_\+numero (\begin{DoxyParamCaption}\item[{char $\ast$}]{testo,  }\item[{int $\ast$}]{input,  }\item[{int}]{numero\+\_\+minimo,  }\item[{int}]{numero\+\_\+massimo }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di acquisizione di un numero in input. 
+
+Questa funzione implementa la programmazione difensiva per l\textquotesingle{}acquisizione di un numero in input Si occupa di verificare che il numero sia valido e compreso tra {\ttfamily numero\+\_\+minimo} e {\ttfamily numero\+\_\+massimo} Il numero acquisito serve a popolare la variabile {\ttfamily $\ast$input} passata per riferimento (puntatore).
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$testo} & Testo da mostrare all\textquotesingle{}utente \\
+\hline
+{\em $\ast$input} & Variabile da popolare con la stringa acquisita \\
+\hline
+{\em numero\+\_\+minimo} & Numero minimo valido \\
+\hline
+{\em numero\+\_\+massimo} & Numero massimo valido \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{comunicazione_8h_a6f41dc64d28912d4342bd93bc4c034aa}\label{comunicazione_8h_a6f41dc64d28912d4342bd93bc4c034aa}} 
+\index{comunicazione.h@{comunicazione.h}!acquisisci\_numero\_con\_condizione\_di\_uscita@{acquisisci\_numero\_con\_condizione\_di\_uscita}}
+\index{acquisisci\_numero\_con\_condizione\_di\_uscita@{acquisisci\_numero\_con\_condizione\_di\_uscita}!comunicazione.h@{comunicazione.h}}
+\doxysubsubsection{\texorpdfstring{acquisisci\_numero\_con\_condizione\_di\_uscita()}{acquisisci\_numero\_con\_condizione\_di\_uscita()}}
+{\footnotesize\ttfamily void acquisisci\+\_\+numero\+\_\+con\+\_\+condizione\+\_\+di\+\_\+uscita (\begin{DoxyParamCaption}\item[{char $\ast$}]{testo,  }\item[{int $\ast$}]{input,  }\item[{int}]{numero\+\_\+minimo,  }\item[{int}]{numero\+\_\+massimo }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di acquisizione di un numero in input, con condizione di uscita. 
+
+Implementazione identica alla funzione \mbox{\hyperlink{comunicazione_8h_a8bddd867033d374bf521a44a8319bf1d}{acquisisci\+\_\+numero}} Questa funzione consente la digitazione del numero -\/1, che il chiamante può utilizzare come condizione di uscita
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$testo} & Testo da mostrare all\textquotesingle{}utente \\
+\hline
+{\em $\ast$input} & Variabile da popolare con la stringa acquisita \\
+\hline
+{\em numero\+\_\+minimo} & Numero minimo valido \\
+\hline
+{\em numero\+\_\+massimo} & Numero massimo valido \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{comunicazione_8h_a39efc26a590d42d81716988ccd0a4aaf}\label{comunicazione_8h_a39efc26a590d42d81716988ccd0a4aaf}} 
+\index{comunicazione.h@{comunicazione.h}!acquisisci\_stringa@{acquisisci\_stringa}}
+\index{acquisisci\_stringa@{acquisisci\_stringa}!comunicazione.h@{comunicazione.h}}
+\doxysubsubsection{\texorpdfstring{acquisisci\_stringa()}{acquisisci\_stringa()}}
+{\footnotesize\ttfamily void acquisisci\+\_\+stringa (\begin{DoxyParamCaption}\item[{char $\ast$}]{testo,  }\item[{char $\ast$}]{input,  }\item[{int}]{lunghezza\+\_\+massima }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di acquisizione di una stringa in input. 
+
+Questa funzione implementa la programmazione difensiva per l\textquotesingle{}acquisizione di una stringa in input Si occupa di verificare che la stringa sia correttamente inserita e si assicura di mantenere il buffer pulito per le acquisizioni successive La stringa acquisita serve a popolare la variabile {\ttfamily $\ast$input} passata per riferimento (puntatore) La {\ttfamily lunghezza\+\_\+massima} è necessaria per la programmazione difensiva
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$testo} & Testo da mostrare all\textquotesingle{}utente \\
+\hline
+{\em $\ast$input} & Variabile da popolare con la stringa acquisita \\
+\hline
+{\em lunghezza\+\_\+massima} & Lunghezza massima della stringa da acquisire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{comunicazione_8h_ac2a15db718c62fed0d0d03d67e19749e}\label{comunicazione_8h_ac2a15db718c62fed0d0d03d67e19749e}} 
+\index{comunicazione.h@{comunicazione.h}!ripeti\_operazione@{ripeti\_operazione}}
+\index{ripeti\_operazione@{ripeti\_operazione}!comunicazione.h@{comunicazione.h}}
+\doxysubsubsection{\texorpdfstring{ripeti\_operazione()}{ripeti\_operazione()}}
+{\footnotesize\ttfamily unsigned short int ripeti\+\_\+operazione (\begin{DoxyParamCaption}\item[{char $\ast$}]{testo }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana che richiede all\textquotesingle{}utente se ripetere l\textquotesingle{}operazione. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$testo} & Testo da mostrare all\textquotesingle{}utente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Restituisce 1 se l\textquotesingle{}utente ha digitato \char`\"{}s\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{comunicazione_8h_a80a5f92b9085edf2858311b84945f7b4}\label{comunicazione_8h_a80a5f92b9085edf2858311b84945f7b4}} 
+\index{comunicazione.h@{comunicazione.h}!stampa\_elenco\_programmi@{stampa\_elenco\_programmi}}
+\index{stampa\_elenco\_programmi@{stampa\_elenco\_programmi}!comunicazione.h@{comunicazione.h}}
+\doxysubsubsection{\texorpdfstring{stampa\_elenco\_programmi()}{stampa\_elenco\_programmi()}}
+{\footnotesize\ttfamily void stampa\+\_\+elenco\+\_\+programmi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlista__programmi__t}{lista\+\_\+programmi\+\_\+t}}}]{lista\+\_\+programmi }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di stampa di un elenco di programmi televisivi. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em lista\+\_\+programmi} & Lista dei programmi da stampare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{comunicazione_8h_ab89b1dcbe352f52dfb77f5cb0e5edd08}\label{comunicazione_8h_ab89b1dcbe352f52dfb77f5cb0e5edd08}} 
+\index{comunicazione.h@{comunicazione.h}!stampa\_programma@{stampa\_programma}}
+\index{stampa\_programma@{stampa\_programma}!comunicazione.h@{comunicazione.h}}
+\doxysubsubsection{\texorpdfstring{stampa\_programma()}{stampa\_programma()}}
+{\footnotesize\ttfamily void stampa\+\_\+programma (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structprogramma__t}{programma\+\_\+t}} $\ast$}]{programma }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di stampa di un programma televisivo. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$programma} & Puntatore al programma da stampare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{comunicazione_8h_ae143eaef835adb02825be356ad76a226}\label{comunicazione_8h_ae143eaef835adb02825be356ad76a226}} 
+\index{comunicazione.h@{comunicazione.h}!stampa\_programma\_suggerito@{stampa\_programma\_suggerito}}
+\index{stampa\_programma\_suggerito@{stampa\_programma\_suggerito}!comunicazione.h@{comunicazione.h}}
+\doxysubsubsection{\texorpdfstring{stampa\_programma\_suggerito()}{stampa\_programma\_suggerito()}}
+{\footnotesize\ttfamily void stampa\+\_\+programma\+\_\+suggerito (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structsuggerimento__t}{suggerimento\+\_\+t}} $\ast$}]{suggerimento }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di stampa di un programma suggerito. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$suggerimento} & Puntatore al programma suggerito da stampare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{comunicazione_8h_a5273586695bd4f9cb926fd60d46a61e0}\label{comunicazione_8h_a5273586695bd4f9cb926fd60d46a61e0}} 
+\index{comunicazione.h@{comunicazione.h}!stampa\_utente@{stampa\_utente}}
+\index{stampa\_utente@{stampa\_utente}!comunicazione.h@{comunicazione.h}}
+\doxysubsubsection{\texorpdfstring{stampa\_utente()}{stampa\_utente()}}
+{\footnotesize\ttfamily void stampa\+\_\+utente (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structutente__t}{utente\+\_\+t}} $\ast$}]{utente }\end{DoxyParamCaption})}
+
+
+
+Funzione booleana di stampa dei dati dell\textquotesingle{}utente. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em $\ast$utente} & Puntatore all\textquotesingle{}utente da stampare \\
+\hline
+\end{DoxyParams}
